@@ -50,5 +50,10 @@ public class WirePuzzleManager : MonoBehaviour
 
         // Perform additional actions (e.g., unlock door, trigger next puzzle)
     }
-}
 
+    public void ResetOrder()
+    {
+        Debug.Log("Resetting puzzle order...");
+        playerOrder.Clear();
+    }
+}
