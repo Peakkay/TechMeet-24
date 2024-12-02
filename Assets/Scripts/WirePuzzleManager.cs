@@ -8,7 +8,8 @@ public class WirePuzzleManager : MonoBehaviour
     private List<int> playerOrder = new List<int>();
     private int totalWires = 7; // The correct number of wires
     private HashSet<WireDragHandler> correctWires = new HashSet<WireDragHandler>();
-    [SerializeField] private GameObject successEffect; // Effect to display when puzzle is solved
+    public GameObject activePuzzleUI;
+    public Puzzle puzzle;
 
     private void Awake()
     {
@@ -46,9 +47,15 @@ public class WirePuzzleManager : MonoBehaviour
     private void PuzzleSolved()
     {
         Debug.Log("Puzzle Solved!");
-        if (successEffect) Instantiate(successEffect, transform.position, Quaternion.identity);
 
-        // Perform additional actions (e.g., unlock door, trigger next puzzle)
+        if (activePuzzleUI)
+        {
+            activePuzzleUI.SetActive(false);
+            activePuzzleUI = null;
+        }
+        PuzzleManager.Instance.CompletePuzzle(puzzle);
+
+        // Perform any additional actions (e.g., unlock doors, trigger events)
     }
 
     public void ResetOrder()
