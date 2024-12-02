@@ -9,6 +9,7 @@ public class Clue : ScriptableObject
     public string description;
     public Sprite clueImage; // Optional: for visual clues.
     public bool isDiscovered = false;
+    public int PuzzleId = -1;
 }
 
 
