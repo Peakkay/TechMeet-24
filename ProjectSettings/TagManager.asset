@@ -4,6 +4,7 @@
 TagManager:
   serializedVersion: 2
   tags:
+  - Obstacle
   - WireSlot
   - Wire
   layers:
@@ -13,9 +14,9 @@ TagManager:
   - 
   - Water
   - UI
-  - 
-  - 
-  - 
+  - Interactable
+  - IntWall
+  - Wall
   - 
   - 
   - 
