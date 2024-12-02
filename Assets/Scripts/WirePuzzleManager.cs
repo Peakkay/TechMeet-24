@@ -7,7 +7,7 @@ public class WirePuzzleManager : MonoBehaviour
 
     private List<int> playerOrder = new List<int>();
     private int totalWires = 7; // The correct number of wires
-
+    private HashSet<WireDragHandler> correctWires = new HashSet<WireDragHandler>();
     [SerializeField] private GameObject successEffect; // Effect to display when puzzle is solved
 
     private void Awake()
@@ -56,4 +56,24 @@ public class WirePuzzleManager : MonoBehaviour
         Debug.Log("Resetting puzzle order...");
         playerOrder.Clear();
     }
+    public void WirePlacedCorrectly(WireDragHandler wire)
+    {
+        if (!correctWires.Contains(wire))
+        {
+            correctWires.Add(wire);
+        }
+
+        // Check if all wires are correctly placed
+        if (correctWires.Count == GetTotalWireCount())
+        {
+            Debug.Log("Puzzle Solved!");
+            // Add logic to handle puzzle completion
+        }
+    }
+
+    private int GetTotalWireCount()
+    {
+        return FindObjectsOfType<WireDragHandler>().Length;
+    }
 }
+

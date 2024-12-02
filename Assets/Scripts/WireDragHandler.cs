@@ -3,46 +3,59 @@ using UnityEngine.EventSystems;
 
 public class WireDragHandler : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler
 {
+    public GameObject correctSlot; // Reference to the correct slot for this wire
     private RectTransform rectTransform;
     private CanvasGroup canvasGroup;
-    private Vector3 initialPosition;
+    private Vector2 originalPosition;
+    private bool isCorrectlyPlaced = false; // Flag to track if the wire is placed correctly
 
-    void Awake()
+    private void Awake()
     {
         rectTransform = GetComponent<RectTransform>();
         canvasGroup = GetComponent<CanvasGroup>();
-        initialPosition = transform.position; // Save the starting position
+        originalPosition = rectTransform.anchoredPosition; // Save the original position
     }
 
     public void OnBeginDrag(PointerEventData eventData)
     {
-        Debug.Log("Drag started for: " + gameObject.name);
-        canvasGroup.alpha = 0.6f; // Make the wire semi-transparent while dragging
-        canvasGroup.blocksRaycasts = false; // Allow it to pass through other objects
+        if (isCorrectlyPlaced) return; // Prevent dragging if already placed correctly
+
+        canvasGroup.alpha = 0.6f;
+        canvasGroup.blocksRaycasts = false; // Disable raycasts for smooth dragging
     }
 
     public void OnDrag(PointerEventData eventData)
     {
-        Debug.Log("Drag going on for: " + gameObject.name);
-        // Move the wire with the mouse
-        rectTransform.anchoredPosition += eventData.delta / rectTransform.lossyScale;
+        if (isCorrectlyPlaced) return; // Prevent dragging if already placed correctly
+
+        rectTransform.anchoredPosition += eventData.delta; // Move wire with mouse
     }
 
     public void OnEndDrag(PointerEventData eventData)
     {
-        Debug.Log("Drag ended for: " + gameObject.name);
-        canvasGroup.alpha = 1f; // Restore visibility
-        canvasGroup.blocksRaycasts = true; // Reactivate raycast blocking
+        if (isCorrectlyPlaced) return; // Prevent dragging if already placed correctly
 
-        // If the wire is not dropped on a valid slot, reset its position
-        if (!eventData.pointerEnter || !eventData.pointerEnter.CompareTag("WireSlot"))
+        canvasGroup.alpha = 1.0f;
+        canvasGroup.blocksRaycasts = true;
+
+        if (RectTransformUtility.RectangleContainsScreenPoint(correctSlot.GetComponent<RectTransform>(), Input.mousePosition))
         {
-            ResetPosition();
-        }
-    }
+            Debug.Log("Wire placed correctly in the slot!");
 
-    public void ResetPosition()
-    {
-        rectTransform.position = initialPosition; // Return to starting position
+            // Snap wire to the correct slot's position
+            rectTransform.anchoredPosition = correctSlot.GetComponent<RectTransform>().anchoredPosition;
+
+            // Mark the wire as correctly placed
+            isCorrectlyPlaced = true;
+
+            // Notify the PuzzleManager that this wire is correctly placed
+            WirePuzzleManager.Instance.WirePlacedCorrectly(this);
+        }
+        else
+        {
+            Debug.Log("Wire returned to its original position.");
+            // Return wire to its original position if dropped incorrectly
+            rectTransform.anchoredPosition = originalPosition;
+        }
     }
 }
