@@ -13,6 +13,10 @@ public class ClueManager : Singleton<ClueManager>
             clue.isDiscovered = true;
             discoveredClues.Add(clue);
             Debug.Log($"Discovered Clue: {clue.clueName}");
+            if(clue.PuzzleId != -1)
+            {
+                PuzzleManager.Instance.CheckPuzzleCompletion(clue.PuzzleId);
+            }
         }
     }
 
