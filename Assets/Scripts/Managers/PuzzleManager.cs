@@ -1,27 +1,37 @@
+using System;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class PuzzleManager : Singleton<PuzzleManager>
 {
-    public List<Clue> allPuzzles; // List of all clues in the game.
-    public List<Clue> discoveredClues = new List<Clue>(); // Clues the player has found.
+    public List<Puzzle> allPuzzles; // List of all clues in the game.
 
-
-    public void DiscoverClue(Clue clue)
+    public void CompletePuzzle(Puzzle p)
     {
-        if (!discoveredClues.Contains(clue))
-        {
-            clue.isDiscovered = true;
-            discoveredClues.Add(clue);
-            Debug.Log($"Discovered Clue: {clue.clueName}");
-        }
+        p.isCompleted = true;
+        Debug.Log(p.name + "is Completed");
     }
-
-    public void DisplayClues()
+    public void CheckPuzzleCompletion(int id)
     {
-        foreach (Clue clue in discoveredClues)
+        foreach(Puzzle p in allPuzzles)
         {
-            Debug.Log($"Clue: {clue.clueName} - {clue.description}");
+            if(id == p.PuzzleId)
+            {
+                int flag = 1;
+                foreach(Clue c in p.requiredClues)
+                {
+                    if(!c.isDiscovered)
+                    {
+                        flag = 0;
+                    }
+                }
+                if(flag == 1)
+                {
+                    Debug.Log("All Clues for" + p.PuzzleName + "have been Discovered");
+                    CompletePuzzle(p);
+                }
+            }
         }
     }
 }

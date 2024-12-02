@@ -154,8 +154,55 @@ Transform:
   - {fileID: 469038049}
   - {fileID: 1539504597}
   - {fileID: 1455371084}
+  - {fileID: 368678753}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &368678752
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 368678753}
+  - component: {fileID: 368678754}
+  m_Layer: 0
+  m_Name: PuzzleManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &368678753
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 368678752}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 77185558}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &368678754
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 368678752}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 251ea7b976d23b048a6ab7459c60d20a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  allPuzzles:
+  - {fileID: 11400000, guid: c5f02cf89515b4f429c7c76c68efc92a, type: 2}
 --- !u!1 &469038048
 GameObject:
   m_ObjectHideFlags: 0
@@ -478,7 +525,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: ed2a238d883a7de4985afa7a39952b30, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 97df2b1e96d4dab4fb0e00294ae23e2c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -486,7 +533,7 @@ SpriteRenderer:
   m_Size: {x: 8, y: 8}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &932269152
@@ -599,15 +646,15 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 5
-  m_Sprite: {fileID: 21300000, guid: 3b90aab536caed146a493951fe0db12a, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 65a0495e9c5170447980e9e4a58b6612, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 3, y: 3.01}
+  m_Size: {x: 0.64, y: 0.64}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &1170506507
@@ -620,7 +667,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -3, y: 0, z: 0}
-  m_LocalScale: {x: 0.05, y: 0.05, z: 1}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -637,8 +684,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 66302fa6e4a56de4e9ab625199f2da34, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  item: {fileID: 11400000, guid: 3547711661c92744792abcdff69ceb17, type: 2}
-  clue: {fileID: 11400000, guid: 19dee4d8733a9c44bacb076e411edc7f, type: 2}
+  item: {fileID: 11400000, guid: 93153e459fc9c964ca08ff9ba4cdda09, type: 2}
+  clue: {fileID: 11400000, guid: ac6107eaf2ec62847ad95862db96e010, type: 2}
 --- !u!1 &1398065630
 GameObject:
   m_ObjectHideFlags: 0
@@ -699,15 +746,15 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 5
-  m_Sprite: {fileID: 21300000, guid: 3b90aab536caed146a493951fe0db12a, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 65a0495e9c5170447980e9e4a58b6612, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 3, y: 3.01}
+  m_Size: {x: 0.64, y: 0.64}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &1398065632
@@ -720,7 +767,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -2, y: 2, z: 0}
-  m_LocalScale: {x: 0.05, y: 0.05, z: 1}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -737,8 +784,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 66302fa6e4a56de4e9ab625199f2da34, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  item: {fileID: 11400000, guid: 3547711661c92744792abcdff69ceb17, type: 2}
-  clue: {fileID: 11400000, guid: bd24fee63081b7a4e92022dbba5b7e14, type: 2}
+  item: {fileID: 11400000, guid: 4aae2df644d3cfb4bb8e85480c5c6229, type: 2}
+  clue: {fileID: 11400000, guid: da53c2b96e237004a8a3bebd06c37dad, type: 2}
 --- !u!58 &1398065634
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -896,15 +943,15 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 5
-  m_Sprite: {fileID: -1673383156, guid: 76a75a879b0e1a14c99f881bcd427247, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 0803aa9ca63fdcc4886c132e3b889858, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.17, y: 0.32}
+  m_Size: {x: 0.64, y: 0.64}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!114 &1539504599
