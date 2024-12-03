@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using System.Collections;
 
 public class EncryptedTerminal : MonoBehaviour
 {
@@ -61,7 +62,7 @@ public class EncryptedTerminal : MonoBehaviour
             feedbackBox.text = "Access Granted";
             feedbackBox.color = Color.green; // Set text color to green
             Debug.Log("Correct Answer! Puzzle Solved.");
-
+            StartCoroutine(LoadNextSceneWithDelay(2f));
         }
         else
         {
@@ -73,5 +74,10 @@ public class EncryptedTerminal : MonoBehaviour
 
         // Clear input field after submission
         inputField.text = "";
+    }
+    private IEnumerator LoadNextSceneWithDelay(float delay)
+    {
+        yield return new WaitForSeconds(delay); // Wait for the specified delay
+        SceneManager.LoadScene("NextSceneName"); // change it to room2 scene
     }
 }
