@@ -17,4 +17,3 @@ MonoBehaviour:
   PuzzleId: 1
   isCompleted: 0
   requiredClues: []
-  puzzleInterface: {fileID: 0}
