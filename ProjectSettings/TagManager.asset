@@ -6,6 +6,7 @@ TagManager:
   tags:
   - WireSlot
   - Wire
+  - Star
   layers:
   - Default
   - TransparentFX
