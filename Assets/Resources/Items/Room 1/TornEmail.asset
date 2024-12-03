@@ -16,3 +16,4 @@ MonoBehaviour:
   description: 
   itemID: 2
   icon: {fileID: 0}
+  clue: {fileID: 11400000, guid: 77a89fad08c01f049afa8b3eb5bf6935, type: 2}

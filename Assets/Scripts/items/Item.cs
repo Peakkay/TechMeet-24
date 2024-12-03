@@ -9,6 +9,7 @@ public class Item : ScriptableObject
     public string description;
     public int itemID;  // Unique identifier for each item
     public Sprite icon;
+    public Clue clue;
     public Item(string name, string desc, int id)
     {
         itemName = name;

@@ -17,3 +17,4 @@ MonoBehaviour:
   PuzzleId: 8
   isCompleted: 0
   requiredClues: []
+  reward: {fileID: 11400000, guid: c6e7c85e03acbfb4093466cb51fc494d, type: 2}
