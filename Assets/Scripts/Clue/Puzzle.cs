@@ -9,4 +9,5 @@ public class Puzzle : ScriptableObject
     public int PuzzleId;
     public bool isCompleted = false;
     public List<Clue> requiredClues;
+    public Clue reward;
 }

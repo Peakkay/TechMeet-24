@@ -11,6 +11,7 @@ public class PuzzleManager : Singleton<PuzzleManager>
     {
         p.isCompleted = true;
         Debug.Log(p.name + "is Completed");
+        ClueManager.Instance.DiscoverClue(p.reward);
     }
     public void CheckPuzzleCompletion(int id)
     {
