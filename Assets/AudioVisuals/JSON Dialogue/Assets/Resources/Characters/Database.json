@@ -1,0 +1,12 @@
+[
+  {
+    "name": "Miguel",
+    "color": "#000010",
+    "base-Image": "miguel"
+  },
+  {
+    "name": "Ivan",
+    "color": "#001000",
+    "base-Image": "ivan"
+  }
+]

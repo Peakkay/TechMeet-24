@@ -1,0 +1,22 @@
+[
+  {
+    "dialogue": "We are having a very human conversation here.",
+    "character": "Ivan",
+    "sprite": "idle"
+  },
+  {
+    "dialogue": "We are.",
+    "character": "Miguel",
+    "sprite": "idle"
+  },
+  {
+    "dialogue": "Nothing to see here",
+    "character": "Miguel",
+    "sprite": "idle"
+  },
+  {
+    "dialogue": "I agree.",
+    "character": "Ivan",
+    "sprite": "idle"
+  }
+]
