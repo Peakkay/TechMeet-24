@@ -31,7 +31,7 @@ public class PlayerMovement : MonoBehaviour
         if (!isMoving)
         {
             // Calculate the new target position
-            Vector3 newPosition = targetPosition + direction * tileSize;
+            Vector3 newPosition = targetPosition + direction * (tileSize/2);
 
             // Check if the new position is clear
             if (IsPathClear(newPosition))
@@ -50,7 +50,7 @@ public class PlayerMovement : MonoBehaviour
     private bool IsPathClear(Vector3 newPosition)
     {
         // Check if the new position overlaps with any colliders
-        Collider2D[] hitColliders = Physics2D.OverlapCircleAll(newPosition, tileSize / 2); // Check entire tile area
+        Collider2D[] hitColliders = Physics2D.OverlapCircleAll(newPosition, (tileSize/2) / 2); // Check entire tile area
         foreach (var hitCollider in hitColliders)
         {
             if (hitCollider.gameObject.CompareTag("Obstacle"))
@@ -80,24 +80,24 @@ public class PlayerMovement : MonoBehaviour
     private void HandleContinuousMovement()
     {
         // Check if movement keys are still pressed and set new target position
-        if (Input.GetKey(KeyCode.W) && IsPathClear(targetPosition + Vector3.up * tileSize))
+        if (Input.GetKey(KeyCode.W) && IsPathClear(targetPosition + Vector3.up * (tileSize/2)))
         {
-            targetPosition += Vector3.up * tileSize;
+            targetPosition += Vector3.up * (tileSize/2);
             isMoving = true;
         }
-        else if (Input.GetKey(KeyCode.A) && IsPathClear(targetPosition + Vector3.left * tileSize))
+        else if (Input.GetKey(KeyCode.A) && IsPathClear(targetPosition + Vector3.left * (tileSize/2)))
         {
-            targetPosition += Vector3.left * tileSize;
+            targetPosition += Vector3.left * (tileSize/2);
             isMoving = true;
         }
-        else if (Input.GetKey(KeyCode.S) && IsPathClear(targetPosition + Vector3.down * tileSize))
+        else if (Input.GetKey(KeyCode.S) && IsPathClear(targetPosition + Vector3.down * (tileSize/2)))
         {
-            targetPosition += Vector3.down * tileSize;
+            targetPosition += Vector3.down * (tileSize/2);
             isMoving = true;
         }
-        else if (Input.GetKey(KeyCode.D) && IsPathClear(targetPosition + Vector3.right * tileSize))
+        else if (Input.GetKey(KeyCode.D) && IsPathClear(targetPosition + Vector3.right * (tileSize/2)))
         {
-            targetPosition += Vector3.right * tileSize;
+            targetPosition += Vector3.right * (tileSize/2);
             isMoving = true;
         }
     }
