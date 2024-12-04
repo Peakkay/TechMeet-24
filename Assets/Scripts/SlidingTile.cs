@@ -7,6 +7,7 @@ public class SlidingTile : MonoBehaviour
 
     public void OnInteract()
     {
+        Debug.Log("Tried");
         puzzleManager?.TryMoveTile(this);
     }
 }
