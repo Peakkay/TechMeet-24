@@ -12,6 +12,8 @@ public class StarMapManager : MonoBehaviour
 
     public TMP_Text feedbackText; // UI Text to display feedback
     public TMP_Text clueText; // UI Text to display the clue
+    public GameObject activePuzzleUI;
+    public Puzzle puzzle;
 
     private void Awake()
     {
@@ -130,5 +132,12 @@ public class StarMapManager : MonoBehaviour
     {
         // Actions to perform when the puzzle is solved
         Debug.Log("Congratulations! The puzzle is solved.");
+        if (activePuzzleUI)
+        {
+            activePuzzleUI.SetActive(false);
+            activePuzzleUI = null;
+        }
+        PuzzleManager.Instance.CompletePuzzle(puzzle);
+
     }
 }

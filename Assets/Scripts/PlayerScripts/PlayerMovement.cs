@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     public float moveSpeed = 5f; // Speed of the player
-    public float tileSize = 1f;   // Size of each tile (1 unit)
+    public float tileSize = 0.5f;   // Size of each tile (1 unit)
     public Animator animator;
 
     public Vector3 targetPosition;
@@ -93,7 +93,7 @@ public class PlayerMovement : MonoBehaviour
         if (!isMoving)
         {
             // Calculate the new target position
-            Vector3 newPosition = targetPosition + direction * tileSize;
+            Vector3 newPosition = targetPosition + direction * (tileSize/2);
 
             // Check if the new position is clear
             if (IsPathClear(newPosition))
