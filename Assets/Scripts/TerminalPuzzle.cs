@@ -14,6 +14,8 @@ public class EncryptedTerminal : MonoBehaviour
     private string encryptedText; // The encrypted text
     private string originalWord; // The original word
     private int encryptionKey; // The random key
+    public GameObject activePuzzleUI;
+    public Puzzle puzzle;
 
     private void Start()
     {
@@ -63,7 +65,12 @@ public class EncryptedTerminal : MonoBehaviour
             feedbackBox.text = "Access Granted";
             feedbackBox.color = Color.green; // Set text color to green
             Debug.Log("Correct Answer! Puzzle Solved.");
-            StartCoroutine(LoadNextSceneWithDelay(2f));
+            if (activePuzzleUI)
+            {
+                activePuzzleUI.SetActive(false);
+                activePuzzleUI = null;
+            }
+            PuzzleManager.Instance.CompletePuzzle(puzzle);
         }
         else
         {
@@ -76,9 +83,5 @@ public class EncryptedTerminal : MonoBehaviour
         // Clear input field after submission
         inputField.text = "";
     }
-    private IEnumerator LoadNextSceneWithDelay(float delay)
-    {
-        yield return new WaitForSeconds(delay); // Wait for the specified delay
-        SceneManager.LoadScene("NextSceneName"); // change it to room2 scene
-    }
+
 }

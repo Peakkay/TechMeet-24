@@ -13,6 +13,8 @@ public class SlidingPuzzleManager : MonoBehaviour
     public SlidingTile[,] grid;
 
     private bool puzzleSolved = false; // Flag to disable interaction when solved
+    public GameObject activePuzzleUI;
+    public Puzzle puzzle;
 
     void Start()
     {
@@ -21,7 +23,7 @@ public class SlidingPuzzleManager : MonoBehaviour
 
     private void InitializeGrid()
     {
- 
+        Debug.Log("Initialised");
         grid = new SlidingTile[gridSize, gridSize];
         emptyTilePosition = new Vector2Int(gridSize - 1, gridSize - 1); // Start with empty tile in bottom-right corner
 
@@ -117,6 +119,12 @@ public class SlidingPuzzleManager : MonoBehaviour
     {
         tile.GetComponent<Button>().interactable = false;
     }
+    if (activePuzzleUI)
+    {
+        activePuzzleUI.SetActive(false);
+        activePuzzleUI = null;
+    }
+    PuzzleManager.Instance.CompletePuzzle(puzzle);
 
 }
 
