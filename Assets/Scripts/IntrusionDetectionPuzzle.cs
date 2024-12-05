@@ -20,6 +20,8 @@ public class IntrusionDetectionPuzzle : MonoBehaviour
 
     private int suspiciousCount; // Total number of suspicious entries
     private int foundCount; // Number of suspicious entries the player has found
+    public GameObject activePuzzleUI;
+    public Puzzle puzzle;
 
     void Start()
     {
@@ -86,6 +88,11 @@ public class IntrusionDetectionPuzzle : MonoBehaviour
     void UnlockNextStage()
     {
         Debug.Log("Puzzle completed. Proceed to the next stage!");
-        // Add logic here for progressing the game
+        if (activePuzzleUI)
+        {
+            activePuzzleUI.SetActive(false);
+            activePuzzleUI = null;
+        }
+        PuzzleManager.Instance.CompletePuzzle(puzzle);
     }
 }
