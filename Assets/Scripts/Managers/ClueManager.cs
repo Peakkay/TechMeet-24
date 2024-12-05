@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -5,6 +6,7 @@ public class ClueManager : Singleton<ClueManager>
 {
     public List<Clue> allClues; // List of all clues in the game.
     public List<Clue> discoveredClues = new List<Clue>(); // Clues the player has found.
+    public event Action<Clue> OnClueDiscovered; // Event triggered when a clue is discovered
 
     public void DiscoverClue(Clue clue)
     {
@@ -15,6 +17,7 @@ public class ClueManager : Singleton<ClueManager>
             Debug.Log($"Discovered Clue: {clue.clueName}");
             DialogueUXManager.instance.ShowBox();
             DialogueUXManager.instance.UpdateDialogue(clue.clueName, clue.description, "#ffffff", clue.clueImage);
+            OnClueDiscovered?.Invoke(clue);
             if (clue.PuzzleId != -1)
             {
                 PuzzleManager.Instance.CheckPuzzleCompletion(clue.PuzzleId);
