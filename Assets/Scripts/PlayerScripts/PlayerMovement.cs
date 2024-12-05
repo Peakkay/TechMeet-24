@@ -107,7 +107,7 @@ public class PlayerMovement : MonoBehaviour
     private bool IsPathClear(Vector3 newPosition)
     {
         // Check if the new position overlaps with any colliders
-        Collider2D[] hitColliders = Physics2D.OverlapCircleAll(newPosition, tileSize / 2); // Check entire tile area
+        Collider2D[] hitColliders = Physics2D.OverlapCircleAll(newPosition, tileSize / 8); // Check entire tile area
         foreach (var hitCollider in hitColliders)
         {
             if (hitCollider.gameObject.CompareTag("Obstacle"))

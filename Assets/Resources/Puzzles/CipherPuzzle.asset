@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d42081388d26e174383ba92f08db7ec5, type: 3}
   m_Name: CipherPuzzle
   m_EditorClassIdentifier: 
-  PuzzleName: CipherPuzzle
+  PuzzleName: Cipher Puzzle
   description: 
   PuzzleId: 4
   isCompleted: 0

@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class BasicInteraction : MonoBehaviour
 {
-    public float interactionDistance = 2f; // Maximum distance for interaction
+    public float interactionDistance = 0.1f; // Maximum distance for interaction
     public LayerMask interactableLayer; // Layer for interactable objects
     public LayerMask intWall;
     private Camera mainCamera;
@@ -29,9 +29,13 @@ public class BasicInteraction : MonoBehaviour
         Vector3 playerPosition = transform.position;
 
         // Check for all colliders in the interaction layer
-        Collider2D[] hitColliders1 = Physics2D.OverlapCircleAll(playerPosition, interactionDistance, interactableLayer);
-        Collider2D[] hitCOlliders2 = Physics2D.OverlapCircleAll(playerPosition, interactionDistance, intWall); 
-        Collider2D[] hitColliders = hitColliders1.Union(hitCOlliders2).ToArray();
+        Collider2D[] hitColliders = Physics2D.OverlapCircleAll(playerPosition, interactionDistance, interactableLayer);
+
+        foreach(var hitCollider in hitColliders)
+        {
+            float distanceToInteractable = Vector2.Distance(playerPosition, hitCollider.transform.position);
+            Debug.Log($"Detected: {hitCollider.gameObject.name} {hitCollider.gameObject.name} is {distanceToInteractable} units away.");
+        }
 
         foreach (var hitCollider in hitColliders)
         {
