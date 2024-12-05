@@ -122,6 +122,96 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1001 &1008194062
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1052786116045749816, guid: 0f957226b0eeb9842a052ef36936f3cb, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1052786116045749816, guid: 0f957226b0eeb9842a052ef36936f3cb, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1052786116045749816, guid: 0f957226b0eeb9842a052ef36936f3cb, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1052786116045749816, guid: 0f957226b0eeb9842a052ef36936f3cb, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1052786116045749816, guid: 0f957226b0eeb9842a052ef36936f3cb, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1052786116045749816, guid: 0f957226b0eeb9842a052ef36936f3cb, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1052786116045749816, guid: 0f957226b0eeb9842a052ef36936f3cb, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1052786116045749816, guid: 0f957226b0eeb9842a052ef36936f3cb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1052786116045749816, guid: 0f957226b0eeb9842a052ef36936f3cb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1052786116045749816, guid: 0f957226b0eeb9842a052ef36936f3cb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9160749441641720318, guid: 0f957226b0eeb9842a052ef36936f3cb, type: 3}
+      propertyPath: m_Name
+      value: ClueUI 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 2665370051235894407, guid: 0f957226b0eeb9842a052ef36936f3cb, type: 3}
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4570691350048335285, guid: 0f957226b0eeb9842a052ef36936f3cb, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1008194065}
+  m_SourcePrefab: {fileID: 100100000, guid: 0f957226b0eeb9842a052ef36936f3cb, type: 3}
+--- !u!224 &1008194063 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 5719666502650869197, guid: 0f957226b0eeb9842a052ef36936f3cb, type: 3}
+  m_PrefabInstance: {fileID: 1008194062}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1008194064 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4570691350048335285, guid: 0f957226b0eeb9842a052ef36936f3cb, type: 3}
+  m_PrefabInstance: {fileID: 1008194062}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1008194065
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1008194064}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf43e1fd58bb52e4ea987c2a335d7931, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canvas: {fileID: 1008194063}
+  nodePrefab: {fileID: 8575696549058626666, guid: 1a6f8dfa73ebb63408c76b1c1e9a94ea, type: 3}
+  BooltrueMaterial: {fileID: 2100000, guid: 67a25f3cd704a7847a3235b0e48c1284, type: 2}
+  BoolFalseMaterial: {fileID: 2100000, guid: 8a08dd24f3b14f645817797fea9a7f55, type: 2}
+  graphData:
+    nodes: []
+    edges: []
 --- !u!1001 &295662085349925829
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -184,3 +274,4 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 295662085349925829}
+  - {fileID: 1008194062}

@@ -45,7 +45,7 @@ void GenerateGraph()
     int rows = 6; // Adjust number of rows for better readability
     for (int i = 0; i < graphData.nodes.Count; i++)
     {
-        CreateNode(graphData.nodes[i].name,graphData.nodes[i].clue.isDicovered(), i, graphData.nodes.Count, rows);
+        CreateNode(graphData.nodes[i].name,graphData.nodes[i].clue.isDiscovered, i, graphData.nodes.Count, rows);
     }
 
     foreach (var edge in graphData.edges)
