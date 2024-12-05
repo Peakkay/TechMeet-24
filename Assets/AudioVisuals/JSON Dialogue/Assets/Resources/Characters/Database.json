@@ -4,7 +4,20 @@
     {
         "name": "Liam",
         "color": "#3498db",
-        "base-Image": "Liam"
-    }
+        "base-Image":"Liam crop"
+    },
+ 
+    {
+      "name": "Sophia",
+      "color": "#3498db",
+      "base-Image":"Sophia crop"
+  },
+  {
+    "name": "Adrian",
+    "color": "#3498db",
+    "base-Image":"Adrian crop"
+}
+
+
 
 ]
