@@ -1,18 +1,13 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class NPCDialogue : MonoBehaviour
+public class NPCInteraction : MonoBehaviour, IInteractable
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public string dialoguePath; // Path to Dialogue JSON file (e.g., "Dialogues/DialogueLiam")
 
-    // Update is called once per frame
-    void Update()
+    public void Interact()
     {
-        
+        Debug.Log("test");
+        DialogueManager.Instance.InstantiateDialogue(dialoguePath);
+        DialogueManager.Instance.StartDialogue();
     }
 }
