@@ -12,8 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e4de4a9bb90d14744a49a38dc7d65781, type: 3}
   m_Name: HiddenNetworkAccessLogs
   m_EditorClassIdentifier: 
-  clueName: 
-  description: 
+  clueName: Hidden Acess Logs
+  description: "The logs also reveal the presence of another unidentified user, with
+    activity overlapping Sophia Lin\u2019s login sessions. "
   clueImage: {fileID: 0}
   isDiscovered: 0
   PuzzleId: -1

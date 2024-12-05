@@ -13,7 +13,10 @@ MonoBehaviour:
   m_Name: FundingRejectionLetter
   m_EditorClassIdentifier: 
   clueName: FundingLetter
-  description: 
+  description: "Dear Dr. Carrington, After careful consideration, the board has decided
+    not to approve additional funding for your AI research project.Research Funding
+    Board. Note-Adrian Meyer strikes again. He\u2019ll do anything to ensure this
+    project fails. Who\u2019s funding him?"
   clueImage: {fileID: 0}
   isDiscovered: 1
   PuzzleId: -1

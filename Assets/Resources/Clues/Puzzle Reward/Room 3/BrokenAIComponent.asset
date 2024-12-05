@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: BrokenAIComponent
   m_EditorClassIdentifier: 
   clueName: Broken AI Component
-  description: 
+  description: "the component's circuits show evidence of being forcefully short-circuited.
+    This is not accidental wear and tear\u2014it was intentionally disabled"
   clueImage: {fileID: 0}
-  isDiscovered: 0
+  isDiscovered: 1
   PuzzleId: -1
