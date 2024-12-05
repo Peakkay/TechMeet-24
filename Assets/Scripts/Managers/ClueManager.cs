@@ -13,7 +13,9 @@ public class ClueManager : Singleton<ClueManager>
             clue.isDiscovered = true;
             discoveredClues.Add(clue);
             Debug.Log($"Discovered Clue: {clue.clueName}");
-            if(clue.PuzzleId != -1)
+            DialogueUXManager.instance.ShowBox();
+            DialogueUXManager.instance.UpdateDialogue(clue.clueName, clue.description, "#ffffff", clue.clueImage);
+            if (clue.PuzzleId != -1)
             {
                 PuzzleManager.Instance.CheckPuzzleCompletion(clue.PuzzleId);
             }
