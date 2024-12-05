@@ -9,12 +9,12 @@ public class DialogueManager : Singleton<DialogueManager>
     //an then skip next line
 
     public Dialogue dialogue;
-    public string resourceDialogue = "Dialogues/DialogueExample";
+    public string resourceDialogue;
     CharacterDatabase characterDatabase;
     public KeyCode jumpLineKey = KeyCode.Space;
     private bool dialogueShow = false;
     public bool dialogueOnDisplay;
-    public void InstantiateDialogue(string resourcePath = "Dialogues/DialogueExample")
+    public void InstantiateDialogue(string resourcePath)
     {
         resourceDialogue = resourcePath;
         dialogue = new Dialogue(resourceDialogue);

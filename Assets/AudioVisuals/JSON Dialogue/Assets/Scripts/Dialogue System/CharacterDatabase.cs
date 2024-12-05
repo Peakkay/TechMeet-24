@@ -22,6 +22,7 @@ public class CharacterDatabase
             characters[i].name = jsonCharacter["name"].Value;
             characters[i].color = jsonCharacter["color"].Value;
             characters[i].prefix = jsonCharacter["base-Image"].Value;
+            characters[i].characterSprite = Resources.Load<Sprite>("Characters/" + characters[i].prefix);
             Debug.Log("CharacterDatabase: " + characters[i].name + " added to database");
         }
     }

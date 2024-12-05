@@ -52,22 +52,34 @@ public class Dialogue
         maxLines = lines.Length;
     }
 
-    public bool NextLine() //Retruns True if more dialogue can be displayed
+    public bool NextLine() // Returns True if more dialogue can be displayed
     {
-        DialogueUXManager.instance.ShowBox();
-        if (currentLine < maxLines)
-        {
-            DialogueUXManager.instance.UpdateDialogue(lines[currentLine].character.name, lines[currentLine].line, lines[currentLine].character.color);
-        }
-        //Debug.Log(lines[currentLine].character.name + ": " + lines[currentLine].line);
-        currentLine++;
-        if (currentLine > maxLines)
+        if (currentLine >= maxLines) // Check if there are no more lines
         {
             ended = true;
-            DialogueUXManager.instance.HideBox();
+            DialogueUXManager.instance.HideBox(); // Hide the dialogue box
+            return false; // No more dialogue to display
         }
-        return !ended;
+
+        // Display the current dialogue line
+        DialogueUXManager.instance.ShowBox();
+        DialogueUXManager.instance.UpdateDialogue(
+            lines[currentLine].character.name,
+            lines[currentLine].line,
+            lines[currentLine].character.color,
+            lines[currentLine].character.characterSprite
+        );
+
+        currentLine++; // Increment the current line AFTER updating the UI
+
+        if (currentLine >= maxLines) // Check if this was the last line
+        {
+            ended = true;
+        }
+
+        return !ended; // Return whether there are more lines to display
     }
+
     public void Start()
     {
         /*

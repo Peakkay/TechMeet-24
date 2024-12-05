@@ -46,9 +46,14 @@ public class DialogueUXManager : MonoBehaviour
         uiTextBody.text = bodyText;
 
 
-        if (spriteCharacter != null) //If Image exists Show on screen
+        if (spriteCharacter != null) // If Image exists, show it on screen
         {
-            
+            uiCharimage.sprite = spriteCharacter; // Set the sprite of the Image component
+            uiCharimage.gameObject.SetActive(true); // Ensure the Image is visible
+        }
+        else
+        {
+            uiCharimage.gameObject.SetActive(false); // Hide the Image if no sprite is provided
         }
     }
 }
