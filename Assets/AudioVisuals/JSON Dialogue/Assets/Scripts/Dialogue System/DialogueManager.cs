@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DialogueManager : MonoBehaviour
+public class DialogueManager : Singleton<DialogueManager>
 {
     //TODO
     //send dialogue directly to dialogueUXManager and make it check for input
@@ -21,7 +21,7 @@ public class DialogueManager : MonoBehaviour
     }
     public int NextLine()
     {
-        if ( dialogue != null)
+        if (dialogue != null)
         {
             dialogue.NextLine();
             if ((dialogue.currentLine > dialogue.maxLines))

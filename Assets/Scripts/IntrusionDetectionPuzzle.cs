@@ -79,6 +79,7 @@ public class IntrusionDetectionPuzzle : MonoBehaviour
         if (foundCount == suspiciousCount)
         {
             feedbackText.text = "You found all suspicious entries! Puzzle solved.";
+            feedbackText.color = Color.green;
             UnlockNextStage();
         }
     }
