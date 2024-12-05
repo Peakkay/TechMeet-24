@@ -1,33 +1,54 @@
-﻿using UnityEngine;
-using UnityEngine.UI;
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
 
-public class DialogueManager : MonoBehaviour
+public class DialogueManager : Singleton<DialogueManager>
 {
-    public Text dialogueText; // Assign this in the Canvas UI
-    public GameObject dialogueBox; // Link this to the dialogue panel
+    //TODO
+    //send dialogue directly to dialogueUXManager and make it check for input
+    //an then skip next line
 
-    public static DialogueManager Instance;
-
-    void Awake()
+    public Dialogue dialogue;
+    public string resourceDialogue = "Dialogues/DialogueExample";
+    CharacterDatabase characterDatabase;
+    public KeyCode jumpLineKey = KeyCode.Space;
+    private bool dialogueShow = false;
+    public bool dialogueOnDisplay;
+    public void InstantiateDialogue(string resourcePath = "Dialogues/DialogueExample")
     {
-        if (Instance == null)
-        {
-            Instance = this;
-        }
-        else
-        {
-            Destroy(gameObject);
-        }
+        resourceDialogue = resourcePath;
+        dialogue = new Dialogue(resourceDialogue);
     }
-
-    public void ShowDialogue(string message)
+    public int NextLine()
     {
-        dialogueBox.SetActive(true);
-        dialogueText.text = message;
+        if (dialogue != null)
+        {
+            dialogue.NextLine();
+            if ((dialogue.currentLine > dialogue.maxLines))
+            {
+                dialogueShow = false;
+            }
+        }
+        return -1;
     }
-
-    public void HideDialogue()
+    void Start()
     {
-        dialogueBox.SetActive(false);
+        characterDatabase = CharacterDatabase.GetSingleton();
+    }
+    public void StartDialogue()
+    {
+        dialogueShow = true;
+        NextLine();
+    }
+    void Update()
+    {
+        dialogueOnDisplay = dialogueShow;
+        if (dialogueShow)
+        {
+            if (Input.GetKeyDown(jumpLineKey))
+            {
+                NextLine();
+            }
+        }
     }
 }
