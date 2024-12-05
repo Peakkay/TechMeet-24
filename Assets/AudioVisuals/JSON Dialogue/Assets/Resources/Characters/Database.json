@@ -1,12 +1,10 @@
 [
-  {
-    "name": "Miguel",
-    "color": "#000010",
-    "base-Image": "miguel"
-  },
-  {
-    "name": "Ivan",
-    "color": "#001000",
-    "base-Image": "ivan"
-  }
+ 
+  
+    {
+        "name": "Liam",
+        "color": "#3498db",
+        "base-Image": "Liam"
+    }
+
 ]

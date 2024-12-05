@@ -8,10 +8,13 @@ public class Character
     public string color;
     public string prefix;
 
+    public Sprite characterSprite;
+
     public Character()
     {
         name = "NONE";
         color = "#ffffff";
         prefix = "";
+        characterSprite = null;
     }
 }

@@ -1,22 +1,10 @@
 [
   {
-    "dialogue": "We are having a very human conversation here.",
-    "character": "Ivan",
-    "sprite": "idle"
+      "character": "Liam",
+      "dialogue": "You shouldn’t be wandering here alone... Dr. Carrington was always in a rush, always muttering about deadlines."
   },
   {
-    "dialogue": "We are.",
-    "character": "Miguel",
-    "sprite": "idle"
-  },
-  {
-    "dialogue": "Nothing to see here",
-    "character": "Miguel",
-    "sprite": "idle"
-  },
-  {
-    "dialogue": "I agree.",
-    "character": "Ivan",
-    "sprite": "idle"
+      "character": "Liam",
+      "dialogue": "Check her notes. She was always scribbling things down."
   }
 ]
