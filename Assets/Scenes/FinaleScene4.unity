@@ -1002,6 +1002,34 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 102871075071051385, guid: 4acb6040b1e886e4d90358d65eb82979, type: 3}
+      propertyPath: m_Size.x
+      value: 0.38975048
+      objectReference: {fileID: 0}
+    - target: {fileID: 102871075071051385, guid: 4acb6040b1e886e4d90358d65eb82979, type: 3}
+      propertyPath: m_Size.y
+      value: 0.45266354
+      objectReference: {fileID: 0}
+    - target: {fileID: 102871075071051385, guid: 4acb6040b1e886e4d90358d65eb82979, type: 3}
+      propertyPath: m_Offset.x
+      value: 0.022019386
+      objectReference: {fileID: 0}
+    - target: {fileID: 102871075071051385, guid: 4acb6040b1e886e4d90358d65eb82979, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.0031456351
+      objectReference: {fileID: 0}
+    - target: {fileID: 102871075071051385, guid: 4acb6040b1e886e4d90358d65eb82979, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 102871075071051385, guid: 4acb6040b1e886e4d90358d65eb82979, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 0.38
+      objectReference: {fileID: 0}
+    - target: {fileID: 234563561790858959, guid: 4acb6040b1e886e4d90358d65eb82979, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -406632825, guid: c398404c22dd45245b41dfa086312380, type: 3}
     - target: {fileID: 2959975649837209694, guid: 4acb6040b1e886e4d90358d65eb82979, type: 3}
       propertyPath: m_Name
       value: Sophia
@@ -1012,11 +1040,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4243897655403833470, guid: 4acb6040b1e886e4d90358d65eb82979, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.052728888
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4243897655403833470, guid: 4acb6040b1e886e4d90358d65eb82979, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.042959962
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4243897655403833470, guid: 4acb6040b1e886e4d90358d65eb82979, type: 3}
       propertyPath: m_LocalPosition.x
@@ -12184,9 +12212,21 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 621163199408918768, guid: 61005886ff770f54eb9197c8dc167d31, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 697344648, guid: e57ca66446317a5449a538df8be681bd, type: 3}
     - target: {fileID: 2809474153977948019, guid: 61005886ff770f54eb9197c8dc167d31, type: 3}
       propertyPath: resourceDialogue
       value: Dialogues/AdrianRoom4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5442235771629910830, guid: 61005886ff770f54eb9197c8dc167d31, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5442235771629910830, guid: 61005886ff770f54eb9197c8dc167d31, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5442235771629910830, guid: 61005886ff770f54eb9197c8dc167d31, type: 3}
       propertyPath: m_LocalPosition.x
@@ -12235,6 +12275,30 @@ PrefabInstance:
     - target: {fileID: 7969603649971169284, guid: 61005886ff770f54eb9197c8dc167d31, type: 3}
       propertyPath: dialoguePath
       value: Dialogues/AdrianRoom4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8542236813572697899, guid: 61005886ff770f54eb9197c8dc167d31, type: 3}
+      propertyPath: m_Size.x
+      value: 0.31425643
+      objectReference: {fileID: 0}
+    - target: {fileID: 8542236813572697899, guid: 61005886ff770f54eb9197c8dc167d31, type: 3}
+      propertyPath: m_Size.y
+      value: 0.47782832
+      objectReference: {fileID: 0}
+    - target: {fileID: 8542236813572697899, guid: 61005886ff770f54eb9197c8dc167d31, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.009436965
+      objectReference: {fileID: 0}
+    - target: {fileID: 8542236813572697899, guid: 61005886ff770f54eb9197c8dc167d31, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.009436786
+      objectReference: {fileID: 0}
+    - target: {fileID: 8542236813572697899, guid: 61005886ff770f54eb9197c8dc167d31, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8542236813572697899, guid: 61005886ff770f54eb9197c8dc167d31, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 0.34
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

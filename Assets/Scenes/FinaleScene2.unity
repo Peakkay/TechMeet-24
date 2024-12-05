@@ -85295,6 +85295,26 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 102871075071051385, guid: 4acb6040b1e886e4d90358d65eb82979, type: 3}
+      propertyPath: m_Size.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 102871075071051385, guid: 4acb6040b1e886e4d90358d65eb82979, type: 3}
+      propertyPath: m_Size.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 102871075071051385, guid: 4acb6040b1e886e4d90358d65eb82979, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 102871075071051385, guid: 4acb6040b1e886e4d90358d65eb82979, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 0.38
+      objectReference: {fileID: 0}
+    - target: {fileID: 234563561790858959, guid: 4acb6040b1e886e4d90358d65eb82979, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -406632825, guid: c398404c22dd45245b41dfa086312380, type: 3}
     - target: {fileID: 2959975649837209694, guid: 4acb6040b1e886e4d90358d65eb82979, type: 3}
       propertyPath: m_Name
       value: Sophia
@@ -85304,12 +85324,20 @@ PrefabInstance:
       value: Dialogues/SophiaRoom2
       objectReference: {fileID: 0}
     - target: {fileID: 4243897655403833470, guid: 4acb6040b1e886e4d90358d65eb82979, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4243897655403833470, guid: 4acb6040b1e886e4d90358d65eb82979, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4243897655403833470, guid: 4acb6040b1e886e4d90358d65eb82979, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.76
+      value: 1.36
       objectReference: {fileID: 0}
     - target: {fileID: 4243897655403833470, guid: 4acb6040b1e886e4d90358d65eb82979, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.21
+      value: 1.47
       objectReference: {fileID: 0}
     - target: {fileID: 4243897655403833470, guid: 4acb6040b1e886e4d90358d65eb82979, type: 3}
       propertyPath: m_LocalPosition.z
@@ -85317,19 +85345,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4243897655403833470, guid: 4acb6040b1e886e4d90358d65eb82979, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: -0.9998433
       objectReference: {fileID: 0}
     - target: {fileID: 4243897655403833470, guid: 4acb6040b1e886e4d90358d65eb82979, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4243897655403833470, guid: 4acb6040b1e886e4d90358d65eb82979, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4243897655403833470, guid: 4acb6040b1e886e4d90358d65eb82979, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: 0.017702863
       objectReference: {fileID: 0}
     - target: {fileID: 4243897655403833470, guid: 4acb6040b1e886e4d90358d65eb82979, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -85341,7 +85369,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4243897655403833470, guid: 4acb6040b1e886e4d90358d65eb82979, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
+      value: -2.029
       objectReference: {fileID: 0}
     - target: {fileID: 5479803369012564263, guid: 4acb6040b1e886e4d90358d65eb82979, type: 3}
       propertyPath: resourceDialogue
