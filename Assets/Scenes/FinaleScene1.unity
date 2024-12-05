@@ -771,7 +771,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.35830593, y: -0.37157544}
+  m_Offset: {x: -0.35830593, y: -0.5841602}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -782,7 +782,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.0997598, y: 0.69308263}
+  m_Size: {x: 2.0997598, y: 1.118252}
   m_EdgeRadius: 0
 --- !u!212 &244601408
 SpriteRenderer:
@@ -2001,6 +2001,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sophia
       objectReference: {fileID: 0}
+    - target: {fileID: 3912030226070973565, guid: 4acb6040b1e886e4d90358d65eb82979, type: 3}
+      propertyPath: dialoguePath
+      value: Dialogues/SophiaRoom1
+      objectReference: {fileID: 0}
     - target: {fileID: 4243897655403833470, guid: 4acb6040b1e886e4d90358d65eb82979, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -2048,6 +2052,10 @@ PrefabInstance:
     - target: {fileID: 4243897655403833470, guid: 4acb6040b1e886e4d90358d65eb82979, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5479803369012564263, guid: 4acb6040b1e886e4d90358d65eb82979, type: 3}
+      propertyPath: resourceDialogue
+      value: Dialogues/SophiaRoom1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
