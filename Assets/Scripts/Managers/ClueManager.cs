@@ -6,13 +6,9 @@ public class ClueManager : Singleton<ClueManager>
 {
     public List<Clue> allClues; // List of all clues in the game.
     public List<Clue> discoveredClues = new List<Clue>(); // Clues the player has found.
-<<<<<<< Updated upstream
-    public event Action<Clue> OnClueDiscovered; // Event triggered when a clue is discovered
-=======
     public KeyCode jumpLineKey = KeyCode.Space; // Key to close the dialogue box.
-
+    public event Action<Clue> OnClueDiscovered;
     private bool isDialogueBoxOpen = false; // Tracks if the dialogue box is currently open.
->>>>>>> Stashed changes
 
     public void DiscoverClue(Clue clue)
     {
@@ -25,14 +21,10 @@ public class ClueManager : Singleton<ClueManager>
             // Show the dialogue box
             DialogueUXManager.instance.ShowBox();
             DialogueUXManager.instance.UpdateDialogue(clue.clueName, clue.description, "#ffffff", clue.clueImage);
-<<<<<<< Updated upstream
             OnClueDiscovered?.Invoke(clue);
-=======
-
             // Mark dialogue box as open
             isDialogueBoxOpen = true;
 
->>>>>>> Stashed changes
             if (clue.PuzzleId != -1)
             {
                 PuzzleManager.Instance.CheckPuzzleCompletion(clue.PuzzleId);
