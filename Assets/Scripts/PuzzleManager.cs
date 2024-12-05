@@ -6,6 +6,11 @@ public class MultiPuzzleManager : MonoBehaviour
     public GameObject MathPuzzlePanel;
     public GameObject LightPatternPanel;
     public GameObject HiddenKeyPanel;
+    public bool mathComplete = false;
+    public bool lightComplete = false;
+    public bool keyComplete = false;
+    public GameObject activePuzzleUI;
+    public Puzzle puzzle;
 
     private void Awake()
     {
@@ -28,9 +33,6 @@ public class MultiPuzzleManager : MonoBehaviour
             case "LightPattern":
                 LightPatternPanel.SetActive(true);
                 break;
-            case "HiddenKey":
-                HiddenKeyPanel.SetActive(true);
-                break;
             default:
                 Debug.LogError($"Puzzle {puzzleName} not found!");
                 break;
@@ -47,7 +49,34 @@ public class MultiPuzzleManager : MonoBehaviour
 
     public void CompletePuzzle(string puzzleName)
     {
-        Debug.Log($"Puzzle {puzzleName} completed!");
-        // Add logic for vault unlocking or progression if needed
+        Debug.Log(puzzleName + "completed");
+        switch (puzzleName)
+        {
+            case "Math":
+                mathComplete = true;
+                break;
+            case "LightPattern":
+                lightComplete = true;
+                break;
+            case "HiddenKey":
+                keyComplete = true;
+                break;
+        }
+        TryCompleteAll();
+    }
+
+    public void TryCompleteAll()
+    {
+        if(mathComplete && keyComplete && lightComplete)
+        {
+            Debug.Log("AllCompleted");
+            if (activePuzzleUI)
+            {
+                activePuzzleUI.SetActive(false);
+                activePuzzleUI = null;
+            }
+            DeactivateAllPuzzles();
+            PuzzleManager.Instance.CompletePuzzle(puzzle);
+        }
     }
 }

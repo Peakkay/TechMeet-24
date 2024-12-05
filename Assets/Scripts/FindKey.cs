@@ -2,14 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class FindKey : MonoBehaviour
+public class FindKey : MonoBehaviour, IInteractable
 {
-    // Start is called before the first frame update
-    void Start()
+    public int keyID;
+    public void Interact()
     {
-        //Check key in player inventory
-        //If found gameObject.SetActive(false);
-        //Else display Find the key in the room
-
+        if(InventoryManager.Instance.HasItem(keyID,1))
+        {
+            MultiPuzzleManager.Instance.CompletePuzzle("HiddenKey");
+        }
     }
 }
