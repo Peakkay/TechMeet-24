@@ -1,54 +1,33 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
+using UnityEngine.UI;
 
 public class DialogueManager : MonoBehaviour
 {
-    //TODO
-    //send dialogue directly to dialogueUXManager and make it check for input
-    //an then skip next line
+    public Text dialogueText; // Assign this in the Canvas UI
+    public GameObject dialogueBox; // Link this to the dialogue panel
 
-    public Dialogue dialogue;
-    public string resourceDialogue = "Dialogues/DialogueExample";
-    CharacterDatabase characterDatabase;
-    public KeyCode jumpLineKey = KeyCode.Space;
-    private bool dialogueShow = false;
-    public bool dialogueOnDisplay;
-    public void InstantiateDialogue(string resourcePath = "Dialogues/DialogueExample")
+    public static DialogueManager Instance;
+
+    void Awake()
     {
-        resourceDialogue = resourcePath;
-        dialogue = new Dialogue(resourceDialogue);
-    }
-    public int NextLine()
-    {
-        if ( dialogue != null)
+        if (Instance == null)
         {
-            dialogue.NextLine();
-            if ((dialogue.currentLine > dialogue.maxLines))
-            {
-                dialogueShow = false;
-            }
+            Instance = this;
         }
-        return -1;
-    }
-    void Start()
-    {
-        characterDatabase = CharacterDatabase.GetSingleton();
-    }
-    public void StartDialogue()
-    {
-        dialogueShow = true;
-        NextLine();
-    }
-    void Update()
-    {
-        dialogueOnDisplay = dialogueShow;
-        if (dialogueShow)
+        else
         {
-            if (Input.GetKeyDown(jumpLineKey))
-            {
-                NextLine();
-            }
+            Destroy(gameObject);
         }
+    }
+
+    public void ShowDialogue(string message)
+    {
+        dialogueBox.SetActive(true);
+        dialogueText.text = message;
+    }
+
+    public void HideDialogue()
+    {
+        dialogueBox.SetActive(false);
     }
 }
