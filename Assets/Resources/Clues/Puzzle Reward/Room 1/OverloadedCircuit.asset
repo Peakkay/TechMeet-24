@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: OverloadedCircuit
   m_EditorClassIdentifier: 
   clueName: Overloaded Circuit
-  description: 
+  description: (123 )Analysis of the circuit reveals intentional tampering. The overload
+    was not caused by an accident but was designed to destabilize the lab systems.
   clueImage: {fileID: 0}
-  isDiscovered: 0
+  isDiscovered: 1
   PuzzleId: -1

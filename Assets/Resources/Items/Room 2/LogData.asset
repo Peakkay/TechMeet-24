@@ -13,7 +13,9 @@ MonoBehaviour:
   m_Name: LogData
   m_EditorClassIdentifier: 
   itemName: Log Data
-  description: 
+  description: "The logs show that someone accessed the system after hours using
+    Jake Harrison\u2019s credentials, even though he was expelled from the project
+    weeks ago."
   itemID: 3
   icon: {fileID: 0}
   clue: {fileID: 11400000, guid: a49cd9332b1dc254ebc634ecfde3108a, type: 2}

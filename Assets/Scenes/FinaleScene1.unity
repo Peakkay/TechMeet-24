@@ -560,6 +560,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   allClues: []
   discoveredClues: []
+  jumpLineKey: 32
 --- !u!1 &224694091
 GameObject:
   m_ObjectHideFlags: 0
@@ -1304,7 +1305,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab1707864cb08ef489f24e084ce8b6ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactionDistance: 1.5
+  interactionDistance: 1.22
   interactableLayer:
     serializedVersion: 2
     m_Bits: 64
@@ -1968,6 +1969,30 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 102871075071051385, guid: 4acb6040b1e886e4d90358d65eb82979, type: 3}
+      propertyPath: m_Size.x
+      value: 0.44395137
+      objectReference: {fileID: 0}
+    - target: {fileID: 102871075071051385, guid: 4acb6040b1e886e4d90358d65eb82979, type: 3}
+      propertyPath: m_Size.y
+      value: 0.60282254
+      objectReference: {fileID: 0}
+    - target: {fileID: 102871075071051385, guid: 4acb6040b1e886e4d90358d65eb82979, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.007943273
+      objectReference: {fileID: 0}
+    - target: {fileID: 102871075071051385, guid: 4acb6040b1e886e4d90358d65eb82979, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.007943988
+      objectReference: {fileID: 0}
+    - target: {fileID: 102871075071051385, guid: 4acb6040b1e886e4d90358d65eb82979, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 102871075071051385, guid: 4acb6040b1e886e4d90358d65eb82979, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 0.38
+      objectReference: {fileID: 0}
     - target: {fileID: 234563561790858959, guid: 4acb6040b1e886e4d90358d65eb82979, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -1986,11 +2011,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4243897655403833470, guid: 4acb6040b1e886e4d90358d65eb82979, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.67
+      value: -0.052
       objectReference: {fileID: 0}
     - target: {fileID: 4243897655403833470, guid: 4acb6040b1e886e4d90358d65eb82979, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.84
+      value: -3.878
       objectReference: {fileID: 0}
     - target: {fileID: 4243897655403833470, guid: 4acb6040b1e886e4d90358d65eb82979, type: 3}
       propertyPath: m_LocalPosition.z
@@ -53150,6 +53175,107 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   items: []
+--- !u!1001 &2074043880
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 326177197766018950, guid: dcb4601700dba0341bf4060b2e60ed8c, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -345851659, guid: b4c741325a3594943b3adf2a3730bf8d, type: 3}
+    - target: {fileID: 784081462408037019, guid: dcb4601700dba0341bf4060b2e60ed8c, type: 3}
+      propertyPath: dialoguePath
+      value: Dialogues/MayaRoom1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2228838010466483958, guid: dcb4601700dba0341bf4060b2e60ed8c, type: 3}
+      propertyPath: m_Name
+      value: Maya
+      objectReference: {fileID: 0}
+    - target: {fileID: 5146866952767528322, guid: dcb4601700dba0341bf4060b2e60ed8c, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5146866952767528322, guid: dcb4601700dba0341bf4060b2e60ed8c, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5146866952767528322, guid: dcb4601700dba0341bf4060b2e60ed8c, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.939
+      objectReference: {fileID: 0}
+    - target: {fileID: 5146866952767528322, guid: dcb4601700dba0341bf4060b2e60ed8c, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.835
+      objectReference: {fileID: 0}
+    - target: {fileID: 5146866952767528322, guid: dcb4601700dba0341bf4060b2e60ed8c, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5146866952767528322, guid: dcb4601700dba0341bf4060b2e60ed8c, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5146866952767528322, guid: dcb4601700dba0341bf4060b2e60ed8c, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5146866952767528322, guid: dcb4601700dba0341bf4060b2e60ed8c, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5146866952767528322, guid: dcb4601700dba0341bf4060b2e60ed8c, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5146866952767528322, guid: dcb4601700dba0341bf4060b2e60ed8c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5146866952767528322, guid: dcb4601700dba0341bf4060b2e60ed8c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5146866952767528322, guid: dcb4601700dba0341bf4060b2e60ed8c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5452777204019685568, guid: dcb4601700dba0341bf4060b2e60ed8c, type: 3}
+      propertyPath: m_Size.x
+      value: 0.49161148
+      objectReference: {fileID: 0}
+    - target: {fileID: 5452777204019685568, guid: dcb4601700dba0341bf4060b2e60ed8c, type: 3}
+      propertyPath: m_Size.y
+      value: 0.571048
+      objectReference: {fileID: 0}
+    - target: {fileID: 5452777204019685568, guid: dcb4601700dba0341bf4060b2e60ed8c, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.00000047683716
+      objectReference: {fileID: 0}
+    - target: {fileID: 5452777204019685568, guid: dcb4601700dba0341bf4060b2e60ed8c, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.039717823
+      objectReference: {fileID: 0}
+    - target: {fileID: 5452777204019685568, guid: dcb4601700dba0341bf4060b2e60ed8c, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5452777204019685568, guid: dcb4601700dba0341bf4060b2e60ed8c, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 0.34
+      objectReference: {fileID: 0}
+    - target: {fileID: 5711915719440777399, guid: dcb4601700dba0341bf4060b2e60ed8c, type: 3}
+      propertyPath: resourceDialogue
+      value: Dialogues/MayaRoom1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: dcb4601700dba0341bf4060b2e60ed8c, type: 3}
 --- !u!1001 &4169677172655243759
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -53214,6 +53340,30 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5452777204019685568, guid: dcb4601700dba0341bf4060b2e60ed8c, type: 3}
+      propertyPath: m_Size.x
+      value: 0.49161148
+      objectReference: {fileID: 0}
+    - target: {fileID: 5452777204019685568, guid: dcb4601700dba0341bf4060b2e60ed8c, type: 3}
+      propertyPath: m_Size.y
+      value: 0.571048
+      objectReference: {fileID: 0}
+    - target: {fileID: 5452777204019685568, guid: dcb4601700dba0341bf4060b2e60ed8c, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.00000047683716
+      objectReference: {fileID: 0}
+    - target: {fileID: 5452777204019685568, guid: dcb4601700dba0341bf4060b2e60ed8c, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.039717823
+      objectReference: {fileID: 0}
+    - target: {fileID: 5452777204019685568, guid: dcb4601700dba0341bf4060b2e60ed8c, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5452777204019685568, guid: dcb4601700dba0341bf4060b2e60ed8c, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 0.34
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -53232,5 +53382,6 @@ SceneRoots:
   - {fileID: 739971455}
   - {fileID: 1090203614}
   - {fileID: 4169677172655243759}
+  - {fileID: 2074043880}
   - {fileID: 686638567}
   - {fileID: 1741588395}

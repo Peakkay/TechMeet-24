@@ -13,7 +13,10 @@ MonoBehaviour:
   m_Name: EncryptedFile
   m_EditorClassIdentifier: 
   clueName: Encrypted File
-  description: 
+  description: "I cannot stand by any longer. The truth about the AI project must
+    come out. The data has been manipulated, and external forces are compromising
+    our work. I\u2019ve attached evidence of the tampering and the financial ties
+    you need to expose this."
   clueImage: {fileID: 0}
-  isDiscovered: 0
+  isDiscovered: 1
   PuzzleId: -1

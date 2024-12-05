@@ -13,7 +13,9 @@ MonoBehaviour:
   m_Name: UnsignedThreatLetter
   m_EditorClassIdentifier: 
   clueName: Unsigned Threat Letter
-  description: 
+  description: "Dr. Carrington, You\u2019ve been warned. Stop digging into matters
+    that don\u2019t concern you. This is your final chance to back off, or you\u2019ll
+    regret it."
   clueImage: {fileID: 0}
   isDiscovered: 0
   PuzzleId: -1

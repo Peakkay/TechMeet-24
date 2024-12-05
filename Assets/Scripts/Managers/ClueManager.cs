@@ -6,7 +6,13 @@ public class ClueManager : Singleton<ClueManager>
 {
     public List<Clue> allClues; // List of all clues in the game.
     public List<Clue> discoveredClues = new List<Clue>(); // Clues the player has found.
+<<<<<<< Updated upstream
     public event Action<Clue> OnClueDiscovered; // Event triggered when a clue is discovered
+=======
+    public KeyCode jumpLineKey = KeyCode.Space; // Key to close the dialogue box.
+
+    private bool isDialogueBoxOpen = false; // Tracks if the dialogue box is currently open.
+>>>>>>> Stashed changes
 
     public void DiscoverClue(Clue clue)
     {
@@ -15,14 +21,39 @@ public class ClueManager : Singleton<ClueManager>
             clue.isDiscovered = true;
             discoveredClues.Add(clue);
             Debug.Log($"Discovered Clue: {clue.clueName}");
+
+            // Show the dialogue box
             DialogueUXManager.instance.ShowBox();
             DialogueUXManager.instance.UpdateDialogue(clue.clueName, clue.description, "#ffffff", clue.clueImage);
+<<<<<<< Updated upstream
             OnClueDiscovered?.Invoke(clue);
+=======
+
+            // Mark dialogue box as open
+            isDialogueBoxOpen = true;
+
+>>>>>>> Stashed changes
             if (clue.PuzzleId != -1)
             {
                 PuzzleManager.Instance.CheckPuzzleCompletion(clue.PuzzleId);
             }
         }
+    }
+
+    private void Update()
+    {
+        // Check if the dialogue box is open and the player presses the key to close it
+        if (isDialogueBoxOpen && Input.GetKeyDown(jumpLineKey))
+        {
+            CloseDialogueBox();
+        }
+    }
+
+    public void CloseDialogueBox()
+    {
+        // Close the dialogue box and reset the flag
+        DialogueUXManager.instance.HideBox();
+        isDialogueBoxOpen = false;
     }
 
     public void DisplayClues()

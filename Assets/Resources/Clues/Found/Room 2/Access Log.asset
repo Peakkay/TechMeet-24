@@ -13,7 +13,9 @@ MonoBehaviour:
   m_Name: Access Log
   m_EditorClassIdentifier: 
   clueName: Access Log
-  description: 
+  description: "The logs show that someone accessed the system after hours using
+    Jake Harrison\u2019s credentials, even though he was expelled from the project
+    weeks ago."
   clueImage: {fileID: 0}
-  isDiscovered: 0
+  isDiscovered: 1
   PuzzleId: -1

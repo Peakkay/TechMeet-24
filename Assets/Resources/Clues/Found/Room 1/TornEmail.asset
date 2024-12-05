@@ -13,7 +13,9 @@ MonoBehaviour:
   m_Name: TornEmail
   m_EditorClassIdentifier: 
   clueName: Torn Email
-  description: 
+  description: "...we can\u2019t afford to let anyone know what\u2019s happening
+    with the project. If this gets out, it will ruin everything we\u2019ve worked
+    for. Make sure the data stays hidden. Do whatever it takes."
   clueImage: {fileID: 0}
-  isDiscovered: 0
+  isDiscovered: 1
   PuzzleId: -1

@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: AITamperingReport
   m_EditorClassIdentifier: 
   clueName: AI Tampering Report
-  description: 
+  description: The tampering appears to have been done by someone with high-level
+    access and advanced technical skills.
   clueImage: {fileID: 0}
   isDiscovered: 0
   PuzzleId: -1

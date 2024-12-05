@@ -4,19 +4,26 @@
     {
         "name": "Liam",
         "color": "#3498db",
-        "base-Image":"Liam crop"
+        "base-Image":"Liam_1"
     },
  
     {
       "name": "Sophia",
       "color": "#3498db",
-      "base-Image":"Sophia crop"
+      "base-Image":"Sophia_1"
   },
   {
     "name": "Adrian",
     "color": "#3498db",
-    "base-Image":"Adrian crop"
-}
+    "base-Image":"Adrian_1"
+},
+
+
+   {
+    "name": "Maya",
+    "color": "#3498db",
+    "base-Image":"Maya_1"
+   }
 
 
 

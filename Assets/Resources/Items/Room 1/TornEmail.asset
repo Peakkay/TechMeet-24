@@ -12,8 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a0a4df64deaf60348826b26ffc57958b, type: 3}
   m_Name: TornEmail
   m_EditorClassIdentifier: 
-  itemName: 
-  description: 
+  itemName: Torn Email
+  description: "...we can\u2019t afford to let anyone know what\u2019s happening
+    with the project. If this gets out, it will ruin everything we\u2019ve worked
+    for. Make sure the data stays hidden. Do whatever it takes."
   itemID: 2
   icon: {fileID: 0}
   clue: {fileID: 11400000, guid: 77a89fad08c01f049afa8b3eb5bf6935, type: 2}
