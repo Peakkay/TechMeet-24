@@ -1183,6 +1183,10 @@ PrefabInstance:
       propertyPath: dialoguePath
       value: Dialogues/SophiaRoom4
       objectReference: {fileID: 0}
+    - target: {fileID: 3912030226070973565, guid: 4acb6040b1e886e4d90358d65eb82979, type: 3}
+      propertyPath: associatedClue
+      value: 
+      objectReference: {fileID: 11400000, guid: 1fbdddd9da916d247b0becb91257f026, type: 2}
     - target: {fileID: 4243897655403833470, guid: 4acb6040b1e886e4d90358d65eb82979, type: 3}
       propertyPath: m_LocalScale.x
       value: 1

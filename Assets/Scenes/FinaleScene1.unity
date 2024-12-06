@@ -2005,6 +2005,10 @@ PrefabInstance:
       propertyPath: dialoguePath
       value: Dialogues/SophiaRoom1
       objectReference: {fileID: 0}
+    - target: {fileID: 3912030226070973565, guid: 4acb6040b1e886e4d90358d65eb82979, type: 3}
+      propertyPath: associatedClue
+      value: 
+      objectReference: {fileID: 11400000, guid: 1dfbb65e365791f40ae024424368be5b, type: 2}
     - target: {fileID: 4243897655403833470, guid: 4acb6040b1e886e4d90358d65eb82979, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -53269,11 +53273,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5452777204019685568, guid: dcb4601700dba0341bf4060b2e60ed8c, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
-      value: 0.2
+      value: 0.22
       objectReference: {fileID: 0}
     - target: {fileID: 5452777204019685568, guid: dcb4601700dba0341bf4060b2e60ed8c, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.y
-      value: 0.34
+      value: 0.43
       objectReference: {fileID: 0}
     - target: {fileID: 5711915719440777399, guid: dcb4601700dba0341bf4060b2e60ed8c, type: 3}
       propertyPath: resourceDialogue
@@ -53296,6 +53300,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 1053425956, guid: 395d97e5b26b5a74d84fe7521a3e2353, type: 3}
+    - target: {fileID: 784081462408037019, guid: dcb4601700dba0341bf4060b2e60ed8c, type: 3}
+      propertyPath: associatedClue
+      value: 
+      objectReference: {fileID: 11400000, guid: 5a2ef919bd496094487d7e952714fd6d, type: 2}
     - target: {fileID: 2228838010466483958, guid: dcb4601700dba0341bf4060b2e60ed8c, type: 3}
       propertyPath: m_Name
       value: Liam
