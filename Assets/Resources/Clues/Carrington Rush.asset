@@ -13,7 +13,9 @@ MonoBehaviour:
   m_Name: Carrington Rush
   m_EditorClassIdentifier: 
   clueName: Carrington Rush
-  description: Clue Discovered
+  description: "\"You shouldn\u2019t be wandering here alone... Dr. Carrington was
+    always in a rush, always muttering about deadlines.\" Links to: Sophia Lin or
+    Adrian Meyer."
   clueImage: {fileID: 0}
-  isDiscovered: 1
+  isDiscovered: 0
   PuzzleId: -1

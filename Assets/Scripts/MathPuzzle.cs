@@ -15,7 +15,7 @@ public class MathPuzzle : MonoBehaviour
 
     void Start()
     {
-        correctSum = 0;
+        correctSum = 9;
 
         // Convert the entered number values to integers and calculate the total sum
         foreach (var value in numberValues)
@@ -47,7 +47,7 @@ public class MathPuzzle : MonoBehaviour
         }
         else
         {
-            Debug.Log("Incorrect sum. Try again!");
+            Debug.Log("Incorrect value. Try again!");
         }
     }
 }

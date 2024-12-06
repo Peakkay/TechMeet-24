@@ -3,6 +3,7 @@ public class PanelController : MonoBehaviour
 {
     public GameObject panel; // Assign the panel GameObject in the Inspector
     private bool isPanelVisible = false; // Tracks the current visibility of the panel
+    public GameObject clueDesc;
 
     void Update()
     {
@@ -17,5 +18,9 @@ public class PanelController : MonoBehaviour
     {
         isPanelVisible = !isPanelVisible; // Toggle the visibility state
         panel.SetActive(isPanelVisible); // Show or hide the panel
+        if(!isPanelVisible)
+        {
+            clueDesc.SetActive(false);
+        }
     }
 }

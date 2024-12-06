@@ -16,7 +16,8 @@ MonoBehaviour:
   description: "I cannot stand by any longer. The truth about the AI project must
     come out. The data has been manipulated, and external forces are compromising
     our work. I\u2019ve attached evidence of the tampering and the financial ties
-    you need to expose this."
+    you need to expose this. (Evidence makes mentions against Sophia, Adrian, and
+    Maya Patel)"
   clueImage: {fileID: 0}
   isDiscovered: 0
   PuzzleId: -1

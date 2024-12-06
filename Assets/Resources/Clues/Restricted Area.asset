@@ -13,7 +13,9 @@ MonoBehaviour:
   m_Name: Restricted Area
   m_EditorClassIdentifier: 
   clueName: Restricted Area
-  description: Clue Discovered
+  description: "\"What are you doing here? This area is restricted! Dr. Carrington
+    was protective of her research\u2026 too protective.\" Links to: Sophia Lin and
+    Dr. Carrington\u2019s secrecy."
   clueImage: {fileID: 0}
-  isDiscovered: 1
+  isDiscovered: 0
   PuzzleId: -1

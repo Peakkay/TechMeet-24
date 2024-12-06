@@ -12,8 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e4de4a9bb90d14744a49a38dc7d65781, type: 3}
   m_Name: Hologram
   m_EditorClassIdentifier: 
-  clueName: Hologram
-  description: Clue Discovered
+  clueName: Academic Rivalry
+  description: "\"So, you\u2019re meddling now? Dr. Carrington\u2019s genius was
+    her downfall\u2014always chasing theories she couldn\u2019t prove.\" Links to:
+    Adrian Meyer, academic rivalry."
   clueImage: {fileID: 0}
   isDiscovered: 0
   PuzzleId: -1

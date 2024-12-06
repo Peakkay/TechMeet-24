@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: external funding
   m_EditorClassIdentifier: 
   clueName: External Funding
-  description: Clue discovered
+  description: "\"Dr. Carrington\u2019s research had external funding tied to shady
+    organizations.\" Links to: Maya Patel, external corruption."
   clueImage: {fileID: 0}
-  isDiscovered: 1
+  isDiscovered: 0
   PuzzleId: -1

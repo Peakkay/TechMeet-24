@@ -16,6 +16,9 @@ public class GraphManager : Singleton<GraphManager>
     public TextMeshProUGUI pageLabel;      // Label to display suspect name
     public Button leftArrowButton;         // Button for previous page
     public Button rightArrowButton;        // Button for next page
+    public GameObject clueDescriptionPanel; // Panel to display clue description
+    public TextMeshProUGUI clueDescriptionText; // Text field to display clue description
+
 
     [Header("Graph Generation")]
     public GameObject nodePrefab;
@@ -79,6 +82,7 @@ public class GraphManager : Singleton<GraphManager>
                 pageLabel.text = "Suspect: Maya";
                 break;
         }
+        clueDescriptionPanel.SetActive(false);
     }
 
     private string GetUniqueKey(int graphIndex, string nodeName)
@@ -118,6 +122,14 @@ public class GraphManager : Singleton<GraphManager>
                 // Set the node's text to its name
                 TextMeshProUGUI tmpText = newNode.GetComponentInChildren<TextMeshProUGUI>();
                 tmpText.text = node.name;
+
+                // Add click functionality
+                Button button = newNode.GetComponent<Button>();
+                if (button != null)
+                {
+                    string clueName = node.name; // Capture the clue name for the button
+                    button.onClick.AddListener(() => ShowClueDescription(clueName));
+                }
 
                 // Calculate grid-based position
                 int row = i / columns; // Determine the row based on the index
@@ -177,5 +189,21 @@ public void UpdateAllNodes()
 
     Debug.Log("All nodes updated based on discovered clues.");
 }
+
+    private void ShowClueDescription(string clueName)
+    {
+        // Find the clue by name in discovered clues
+        Clue clue = ClueManager.Instance.discoveredClues.Find(c => c.clueName == clueName);
+        if (clue != null)
+        {
+            clueDescriptionPanel.SetActive(true); // Show the clue description panel
+            clueDescriptionText.text = clue.description; // Display the clue description
+            Debug.Log($"Showing description for clue: {clue.clueName}");
+        }
+        else
+        {
+            Debug.LogWarning($"Clue {clueName} not found in discovered clues.");
+        }
+    }
 
 }

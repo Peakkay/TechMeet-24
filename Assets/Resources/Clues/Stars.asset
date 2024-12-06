@@ -13,7 +13,9 @@ MonoBehaviour:
   m_Name: Stars
   m_EditorClassIdentifier: 
   clueName: Stars
-  description: Clue Discovered.
+  description: "\"Funny thing about telescopes\u2014they show the stars shining as
+    if they are roaring like a lion , but sometimes they show things closer than
+    you'd expect.\""
   clueImage: {fileID: 0}
   isDiscovered: 0
   PuzzleId: -1

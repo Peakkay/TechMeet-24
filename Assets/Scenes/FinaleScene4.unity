@@ -1138,7 +1138,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b8eed61374aada74eba01ba6b8c674db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerTargetPositionInScene2: {x: 0, y: 0, z: 0}
   targetSceneName: FinaleConclusion
 --- !u!1001 &676636870
 PrefabInstance:
@@ -12755,6 +12754,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6055673698196681282, guid: 7d242ab842b68f04f9bc2aa6b9b34731, type: 3}
+      propertyPath: m_Text
+      value: Enter the Value
+      objectReference: {fileID: 0}
     - target: {fileID: 7076263087817793847, guid: 7d242ab842b68f04f9bc2aa6b9b34731, type: 3}
       propertyPath: m_Name
       value: Canvas
@@ -12762,6 +12765,10 @@ PrefabInstance:
     - target: {fileID: 7089840622391773061, guid: 7d242ab842b68f04f9bc2aa6b9b34731, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8971726213330398638, guid: 7d242ab842b68f04f9bc2aa6b9b34731, type: 3}
+      propertyPath: m_text
+      value: Enter the Value
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 793075889744266892, guid: 7d242ab842b68f04f9bc2aa6b9b34731, type: 3}
