@@ -14,6 +14,7 @@ public class StarMapManager : MonoBehaviour
     public TMP_Text clueText; // UI Text to display the clue
     public GameObject activePuzzleUI;
     public Puzzle puzzle;
+    public PuzzleObject starter;
 
     private void Awake()
     {
@@ -138,6 +139,9 @@ public class StarMapManager : MonoBehaviour
             activePuzzleUI = null;
         }
         PuzzleManager.Instance.CompletePuzzle(puzzle);
+        starter.puzzleOpen = false;
+        GameObject player = GameObject.FindGameObjectWithTag("Player");
+        player.GetComponent<PlayerMovement>().canMove = true;
 
     }
 }

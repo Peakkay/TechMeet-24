@@ -11,6 +11,7 @@ public class LockedDrawer : MonoBehaviour
     private bool isUnlocked = false; 
     public GameObject activePuzzleUI;
     public Puzzle puzzle;
+    public PuzzleObject starter;
 
     public void Interact(string inputCode)
     {
@@ -31,6 +32,9 @@ public class LockedDrawer : MonoBehaviour
                 activePuzzleUI = null;
             }
             PuzzleManager.Instance.CompletePuzzle(puzzle);
+            starter.puzzleOpen = false;
+            GameObject player = GameObject.FindGameObjectWithTag("Player");
+            player.GetComponent<PlayerMovement>().canMove = true;
 
         }
         else

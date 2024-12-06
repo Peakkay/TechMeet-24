@@ -9,6 +9,7 @@ public class MathPuzzle : MonoBehaviour
     public List<string> numberValues; // Strings representing the numbers, editable from the Inspector
     public TMP_InputField sumInput; // TMP_InputField for entering the sum
     public GameObject submitButton; // Button to submit the answer
+    public PuzzleObject starter;
 
     private int correctSum;
 
@@ -39,7 +40,10 @@ public class MathPuzzle : MonoBehaviour
         {
             Debug.Log("Math puzzle solved!");
             MultiPuzzleManager.Instance.CompletePuzzle("Math");
+            starter.puzzleOpen = false;
             gameObject.SetActive(false); // Deactivate the panel
+            GameObject player = GameObject.FindGameObjectWithTag("Player");
+            player.GetComponent<PlayerMovement>().canMove = true;
         }
         else
         {

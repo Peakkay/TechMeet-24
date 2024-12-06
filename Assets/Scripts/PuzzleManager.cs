@@ -77,6 +77,8 @@ public class MultiPuzzleManager : MonoBehaviour
             }
             DeactivateAllPuzzles();
             PuzzleManager.Instance.CompletePuzzle(puzzle);
+            GameObject player = GameObject.FindGameObjectWithTag("Player");
+            player.GetComponent<PlayerMovement>().canMove = true;
         }
     }
 }

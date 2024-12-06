@@ -2478,6 +2478,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   activePuzzleUI: {fileID: 351305203}
   puzzle: {fileID: 11400000, guid: 7090ab3bf0f23d24399ab023ef04230f, type: 2}
+  starter: {fileID: 1357942487}
 --- !u!1 &1003063310
 GameObject:
   m_ObjectHideFlags: 0
@@ -3498,6 +3499,7 @@ MonoBehaviour:
   puzzle: {fileID: 11400000, guid: 7090ab3bf0f23d24399ab023ef04230f, type: 2}
   PuzzleUI: {fileID: 351305203}
   puzzleStarterId: 1
+  puzzleOpen: 0
 --- !u!212 &1357942488
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -52915,6 +52917,7 @@ MonoBehaviour:
   keycard: {fileID: 11400000, guid: b4983297c25c58741914a10091ce5eb9, type: 2}
   activePuzzleUI: {fileID: 1881899189}
   puzzle: {fileID: 11400000, guid: bd673ed55932d924888c4cf3d1480b2d, type: 2}
+  starter: {fileID: 1836969774}
 --- !u!114 &1836969774
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -52930,6 +52933,7 @@ MonoBehaviour:
   puzzle: {fileID: 11400000, guid: bd673ed55932d924888c4cf3d1480b2d, type: 2}
   PuzzleUI: {fileID: 1318302007}
   puzzleStarterId: 2
+  puzzleOpen: 0
 --- !u!212 &1836969775
 SpriteRenderer:
   m_ObjectHideFlags: 0

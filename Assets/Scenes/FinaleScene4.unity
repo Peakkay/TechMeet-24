@@ -415,6 +415,7 @@ MonoBehaviour:
   puzzle: {fileID: 11400000, guid: cd66e2cc57954c447a25fc6e0e87e238, type: 2}
   PuzzleUI: {fileID: 2027523366}
   puzzleStarterId: 
+  puzzleOpen: 0
 --- !u!4 &342828686
 Transform:
   m_ObjectHideFlags: 0
@@ -12255,6 +12256,7 @@ MonoBehaviour:
   feedbackText: {fileID: 663110285}
   activePuzzleUI: {fileID: 2027523366}
   puzzle: {fileID: 11400000, guid: cd66e2cc57954c447a25fc6e0e87e238, type: 2}
+  starter: {fileID: 342828685}
 --- !u!1 &1412952734
 GameObject:
   m_ObjectHideFlags: 0
@@ -12819,6 +12821,7 @@ MonoBehaviour:
   - {fileID: 626907915}
   - {fileID: 626907914}
   - {fileID: 626907913}
+  starter: {fileID: 0}
 --- !u!1 &1623584970 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7089840622391773061, guid: 7d242ab842b68f04f9bc2aa6b9b34731, type: 3}
@@ -12839,6 +12842,7 @@ MonoBehaviour:
   numberValues: []
   sumInput: {fileID: 1655903832}
   submitButton: {fileID: 1655903831}
+  starter: {fileID: 0}
 --- !u!1 &1641933554
 GameObject:
   m_ObjectHideFlags: 0

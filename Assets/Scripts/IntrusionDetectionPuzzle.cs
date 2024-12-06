@@ -22,6 +22,7 @@ public class IntrusionDetectionPuzzle : MonoBehaviour
     private int foundCount; // Number of suspicious entries the player has found
     public GameObject activePuzzleUI;
     public Puzzle puzzle;
+    public PuzzleObject starter;
 
     void Start()
     {
@@ -94,5 +95,8 @@ public class IntrusionDetectionPuzzle : MonoBehaviour
             activePuzzleUI = null;
         }
         PuzzleManager.Instance.CompletePuzzle(puzzle);
+        starter.puzzleOpen = false;
+        GameObject player = GameObject.FindGameObjectWithTag("Player");
+        player.GetComponent<PlayerMovement>().canMove = true;
     }
 }

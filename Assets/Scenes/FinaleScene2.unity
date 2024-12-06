@@ -23999,6 +23999,7 @@ MonoBehaviour:
   feedbackBox: {fileID: 1999564644}
   activePuzzleUI: {fileID: 1583947866}
   puzzle: {fileID: 11400000, guid: ade3750bc8279f74dadc04b56b81c8a1, type: 2}
+  starter: {fileID: 837630506}
 --- !u!1 &808182815
 GameObject:
   m_ObjectHideFlags: 0
@@ -24195,6 +24196,7 @@ MonoBehaviour:
   puzzle: {fileID: 11400000, guid: ade3750bc8279f74dadc04b56b81c8a1, type: 2}
   PuzzleUI: {fileID: 1583947866}
   puzzleStarterId: 
+  puzzleOpen: 0
 --- !u!212 &837630508
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -84226,6 +84228,7 @@ MonoBehaviour:
   puzzle: {fileID: 11400000, guid: 897eb3fb5d130d044a64996ce35d4000, type: 2}
   PuzzleUI: {fileID: 540559738}
   puzzleStarterId: 
+  puzzleOpen: 0
 --- !u!61 &1250374704
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -85055,6 +85058,7 @@ MonoBehaviour:
   emptyTile: {fileID: 2142301842}
   activePuzzleUI: {fileID: 540559738}
   puzzle: {fileID: 11400000, guid: 897eb3fb5d130d044a64996ce35d4000, type: 2}
+  starter: {fileID: 1250374703}
 --- !u!114 &1365056810
 MonoBehaviour:
   m_ObjectHideFlags: 0

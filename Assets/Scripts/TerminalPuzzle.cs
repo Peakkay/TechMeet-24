@@ -16,6 +16,7 @@ public class EncryptedTerminal : MonoBehaviour
     private int encryptionKey; // The random key
     public GameObject activePuzzleUI;
     public Puzzle puzzle;
+    public PuzzleObject starter;
 
     private void Start()
     {
@@ -71,6 +72,9 @@ public class EncryptedTerminal : MonoBehaviour
                 activePuzzleUI = null;
             }
             PuzzleManager.Instance.CompletePuzzle(puzzle);
+            starter.puzzleOpen = false;
+            GameObject player = GameObject.FindGameObjectWithTag("Player");
+            player.GetComponent<PlayerMovement>().canMove = true;
         }
         else
         {

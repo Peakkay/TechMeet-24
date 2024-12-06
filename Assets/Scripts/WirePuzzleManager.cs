@@ -10,6 +10,7 @@ public class WirePuzzleManager : MonoBehaviour
     private HashSet<WireDragHandler> correctWires = new HashSet<WireDragHandler>();
     public GameObject activePuzzleUI;
     public Puzzle puzzle;
+    public PuzzleObject starter;
 
     private void Awake()
     {
@@ -54,6 +55,9 @@ public class WirePuzzleManager : MonoBehaviour
             activePuzzleUI = null;
         }
         PuzzleManager.Instance.CompletePuzzle(puzzle);
+        starter.puzzleOpen = false;
+        GameObject player = GameObject.FindGameObjectWithTag("Player");
+        player.GetComponent<PlayerMovement>().canMove = true;
 
         // Perform any additional actions (e.g., unlock doors, trigger events)
     }

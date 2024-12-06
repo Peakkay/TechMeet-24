@@ -15,6 +15,7 @@ public class SlidingPuzzleManager : MonoBehaviour
     private bool puzzleSolved = false; // Flag to disable interaction when solved
     public GameObject activePuzzleUI;
     public Puzzle puzzle;
+    public PuzzleObject starter;
 
     void Start()
     {
@@ -125,6 +126,9 @@ public class SlidingPuzzleManager : MonoBehaviour
         activePuzzleUI = null;
     }
     PuzzleManager.Instance.CompletePuzzle(puzzle);
+    starter.puzzleOpen = false;
+    GameObject player = GameObject.FindGameObjectWithTag("Player");
+    player.GetComponent<PlayerMovement>().canMove = true;
 
 }
 

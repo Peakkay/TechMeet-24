@@ -7,6 +7,7 @@ public class LightPatternPuzzle : MonoBehaviour
     public GameObject[] keypadButtons; // Buttons on the keypad
     private int[] correctSequence = { 0, 2, 1, 3 }; // Example sequence
     private int currentStep = 0;
+    public PuzzleObject starter;
     void Start()
     {
         foreach (var button in keypadButtons)
@@ -27,7 +28,10 @@ public class LightPatternPuzzle : MonoBehaviour
             {
                 Debug.Log("Light pattern puzzle solved!");
                 MultiPuzzleManager.Instance.CompletePuzzle("LightPattern");
+                starter.puzzleOpen = false;
                 gameObject.SetActive(false); // Deactivate the panel
+                GameObject player = GameObject.FindGameObjectWithTag("Player");
+                player.GetComponent<PlayerMovement>().canMove = true;
             }
         }
         else
