@@ -21,10 +21,11 @@ public class ClueManager : Singleton<ClueManager>
             // Show the dialogue box
             DialogueUXManager.instance.ShowBox();
             DialogueUXManager.instance.UpdateDialogue(clue.clueName, clue.description, "#ffffff", clue.clueImage);
+            isDialogueBoxOpen = true;
             OnClueDiscovered?.Invoke(clue);
             GraphManager.Instance.UpdateAllNodes();
             // Mark dialogue box as open
-            isDialogueBoxOpen = true;
+
 
             if (clue.PuzzleId != -1)
             {
