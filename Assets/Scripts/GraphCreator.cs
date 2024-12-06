@@ -1,26 +1,13 @@
 using UnityEngine;
 using System.Collections.Generic;
 
-public class GraphCreator : MonoBehaviour
+public class GraphCreator : Singleton<GraphCreator>
 {
-    public static GraphCreator Instance { get; private set; }
-
     [Header("Graph Data for Suspects")]
     public GraphData sophiaGraph;
     public GraphData adrianGraph;
     public GraphData liamGraph;
     public GraphData mayaGraph;
-
-    void Awake()
-    {
-        if (Instance != null && Instance != this)
-        {
-            Destroy(gameObject);
-            return;
-        }
-        Instance = this;
-        DontDestroyOnLoad(gameObject);
-    }
 
     void Start()
     {
@@ -37,7 +24,7 @@ public class GraphCreator : MonoBehaviour
         {
             nodes = new List<Node>
             {
-                new Node { name = "Locked Drawer", status = false },
+                new Node { name = "Unsigned Threat Letter", status = false },
                 new Node { name = "Carrington Rush", status = false },
                 new Node { name = "Restricted Area", status = false },
                 new Node { name = "Carrington Secretive", status = false },
@@ -52,7 +39,7 @@ public class GraphCreator : MonoBehaviour
             },
             edges = new List<Edge>
             {
-                new Edge { from = "Locked Drawer", to = "Carrington Rush", type = "Unidirectional" },
+                new Edge { from = "Unsigned Threat Letter", to = "Carrington Rush", type = "Unidirectional" },
                 new Edge { from = "Carrington Rush", to = "Restricted Area", type = "Unidirectional" },
                 new Edge { from = "Restricted Area", to = "Carrington Secretive", type = "Unidirectional" },
                 new Edge { from = "Overloaded Circuit", to = "Torn Email", type = "Unidirectional" },
@@ -68,7 +55,7 @@ public class GraphCreator : MonoBehaviour
         {
             nodes = new List<Node>
             {
-                new Node { name = "Locked Drawer", status = false },
+                new Node { name = "Unsigned Threat Letter", status = false },
                 new Node { name = "Carrington Rush", status = false },
                 new Node { name = "Academic Rivalry", status = false },
                 new Node { name = "Torn Mail", status = false },
@@ -80,7 +67,7 @@ public class GraphCreator : MonoBehaviour
             },
             edges = new List<Edge>
             {
-                new Edge { from = "Locked Drawer", to = "Carrington Rush", type = "Unidirectional" },
+                new Edge { from = "Unsigned Threat Letter", to = "Carrington Rush", type = "Unidirectional" },
                 new Edge { from = "Carrington Rush", to = "Academic Rivalry", type = "Unidirectional" },
                 new Edge { from = "Torn Mail", to = "Financial Motives", type = "Unidirectional" },
                 new Edge { from = "Financial Motives", to = "Funding Rejection Letter", type = "Unidirectional" }
