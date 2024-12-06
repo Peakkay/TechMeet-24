@@ -15,6 +15,7 @@ public class CutsceneManager : Singleton<CutsceneManager>
     public bool isPlaying = false;
     private bool isSceneLoading = false;
     private bool cutsceneStarted = false;
+    public bool endScene = false;
 
 
     private void Start()
@@ -101,23 +102,26 @@ public class CutsceneManager : Singleton<CutsceneManager>
     public void skipCutscene()
     {
         if (!cutsceneStarted || isSceneLoading) return; // Prevent redundant calls
-        isSceneLoading = true;
-        cutsceneStarted = false; // Ensure cutscene state is reset
-        canvas.SetActive(false);
-        isPlaying = false;
+        if(!endScene){
+            isSceneLoading = true;
+            cutsceneStarted = false; // Ensure cutscene state is reset
+            canvas.SetActive(false);
+            isPlaying = false;
 
-        // Stop the video to avoid triggering loopPointReached
-        if (videoPlayer.isPlaying)
-        {
-            videoPlayer.Stop();
-            videoPlayer.loopPointReached -= OnCutsceneEnd; // Unsubscribe to avoid unexpected calls
+            // Stop the video to avoid triggering loopPointReached
+            if (videoPlayer.isPlaying)
+            {
+                videoPlayer.Stop();
+                videoPlayer.loopPointReached -= OnCutsceneEnd; // Unsubscribe to avoid unexpected calls
+            }
+
+            Debug.Log("Cutscene skipped.");
+
+            // Load the next scene
+            var asyncOperation = SceneManager.LoadSceneAsync(targetSceneName);
+            asyncOperation.completed -= OnSceneLoaded; // Unsubscribe if already subscribed
+            asyncOperation.completed += OnSceneLoaded; // Subscribe only once
         }
 
-        Debug.Log("Cutscene skipped.");
-
-        // Load the next scene
-        var asyncOperation = SceneManager.LoadSceneAsync(targetSceneName);
-        asyncOperation.completed -= OnSceneLoaded; // Unsubscribe if already subscribed
-        asyncOperation.completed += OnSceneLoaded; // Subscribe only once
     }
 }

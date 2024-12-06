@@ -18,6 +18,7 @@ public class EndingManager : Singleton<EndingManager>
     {
         wlindex = (index == 3)?0:1;
         CutsceneManager.Instance.videoPlayer.clip = clips[index];
+        CutsceneManager.Instance.endScene = true;
         CutsceneManager.Instance.PlayCutscene();
         videoPlayer.loopPointReached += OnCutsceneEnd;
     }
