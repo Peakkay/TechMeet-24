@@ -293,6 +293,7 @@ MonoBehaviour:
   targetSceneName: FinaleScene1
   mainGameObject: {fileID: 0}
   playerTargetPositionInScene2: {x: -5, y: 3, z: 0}
+  isPlaying: 0
 --- !u!4 &356870506
 Transform:
   m_ObjectHideFlags: 0

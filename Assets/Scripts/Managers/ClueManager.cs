@@ -37,6 +37,7 @@ public class ClueManager : Singleton<ClueManager>
 
             // Trigger the event for clue discovery (useful for other game systems, like puzzles)
             OnClueDiscovered?.Invoke(clue);
+            GraphManager.Instance.UpdateAllNodes();
 
             // If the clue is tied to a puzzle, notify the PuzzleManager (optional)
             if (clue.PuzzleId != -1)
@@ -60,6 +61,7 @@ public class ClueManager : Singleton<ClueManager>
 
             // Trigger the event for clue discovery (useful for other game systems, like puzzles)
             OnClueDiscovered?.Invoke(clue);
+            GraphManager.Instance.UpdateAllNodes();
 
             // If the clue is tied to a puzzle, notify the PuzzleManager (optional)
             if (clue.PuzzleId != -1)

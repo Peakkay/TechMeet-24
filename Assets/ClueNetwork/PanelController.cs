@@ -2,7 +2,6 @@ using UnityEngine;
 public class PanelController : MonoBehaviour
 {
     public GameObject panel; // Assign the panel GameObject in the Inspector
-
     private bool isPanelVisible = false; // Tracks the current visibility of the panel
 
     void Update()
@@ -12,7 +11,6 @@ public class PanelController : MonoBehaviour
         {
             Debug.Log("Check");
             TogglePanel();
-
         }
     }
     private void TogglePanel()

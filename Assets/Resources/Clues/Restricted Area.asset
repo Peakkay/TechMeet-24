@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e4de4a9bb90d14744a49a38dc7d65781, type: 3}
   m_Name: Restricted Area
   m_EditorClassIdentifier: 
-  clueName: ' Restricted Area'
+  clueName: Restricted Area
   description: Clue Discovered
   clueImage: {fileID: 0}
   isDiscovered: 1

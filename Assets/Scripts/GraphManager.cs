@@ -22,6 +22,7 @@ public class GraphManager : Singleton<GraphManager>
     public Material BoolTrueMaterial;
     public Material BoolFalseMaterial;
     private Dictionary<string, GameObject> nodeObjects = new Dictionary<string, GameObject>();
+    public Sprite image;
 
     void Start()
     {
@@ -106,6 +107,14 @@ public class GraphManager : Singleton<GraphManager>
                 GameObject newNode = Instantiate(nodePrefab, graphPages[graphIndex]);
                 newNode.name = node.name;
 
+                Image imageComponent = newNode.GetComponentInChildren<Image>();
+                if (imageComponent != null && image != null)
+                {
+                    imageComponent.sprite = image;
+                    imageComponent.preserveAspect = true; // Ensure the image maintains its aspect ratio
+                    RectTransform imageRect = imageComponent.GetComponent<RectTransform>();
+                    imageRect.sizeDelta = new Vector2(150f, 100f); // Width and height in pixels
+                }
                 // Set the node's text to its name
                 TextMeshProUGUI tmpText = newNode.GetComponentInChildren<TextMeshProUGUI>();
                 tmpText.text = node.name;

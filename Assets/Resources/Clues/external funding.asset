@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e4de4a9bb90d14744a49a38dc7d65781, type: 3}
   m_Name: external funding
   m_EditorClassIdentifier: 
-  clueName: external funding
+  clueName: External Funding
   description: Clue discovered
   clueImage: {fileID: 0}
   isDiscovered: 1
