@@ -15,5 +15,5 @@ MonoBehaviour:
   clueName: Carrington Rush
   description: Clue Discovered
   clueImage: {fileID: 0}
-  isDiscovered: 1
+  isDiscovered: 0
   PuzzleId: -1
