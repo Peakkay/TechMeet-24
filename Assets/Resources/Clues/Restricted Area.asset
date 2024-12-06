@@ -15,5 +15,5 @@ MonoBehaviour:
   clueName: ' Restricted Area'
   description: Clue Discovered
   clueImage: {fileID: 0}
-  isDiscovered: 0
+  isDiscovered: 1
   PuzzleId: -1

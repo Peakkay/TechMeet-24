@@ -1,43 +1,27 @@
 using UnityEngine;
-using System.Collections;
 
 public class NPCInteraction : MonoBehaviour, IInteractable
 {
-    public string dialoguePath; // Path to Dialogue JSON file (e.g., "Dialogues/DialogueLiam")
-    public Clue associatedClue; // Clue to be discovered upon dialogue completion
-
-    private bool isDialogueActive = false; // Tracks if dialogue is currently active
+    public string dialoguePath;  // Path to Dialogue JSON file (e.g., "Dialogues/DialogueLiam")
+    public Clue associatedClue;  // The clue associated with this NPC
 
     public void Interact()
     {
-        if (!isDialogueActive)
-        {
-            Debug.Log("Starting NPC dialogue...");
-            DialogueManager.Instance.InstantiateDialogue(dialoguePath);
-            DialogueManager.Instance.StartDialogue();
-            isDialogueActive = true;
+        Debug.Log("Interacted with NPC");
 
-            // Start monitoring for dialogue completion
-            StartCoroutine(WaitForDialogueCompletion());
-        }
-    }
+        // Show the NPC's dialogue
+        DialogueManager.Instance.InstantiateDialogue(dialoguePath);
+        DialogueManager.Instance.StartDialogue();
 
-    private IEnumerator WaitForDialogueCompletion()
-    {
-        // Wait until the dialogue finishes
-        while (DialogueManager.Instance.dialogueOnDisplay)
-        {
-            yield return null;
-        }
-
-        // Once dialogue is complete, discover the associated clue
+        // Discover the clue associated with this NPC without showing the dialogue box
         if (associatedClue != null)
         {
-            ClueManager.Instance.DiscoverClue(associatedClue);
-            Debug.Log($"Discovered clue from NPC: {associatedClue.clueName}");
+            ClueManager.Instance.DiscoverClueFromNPC(associatedClue);  // Discover the clue
+            Debug.Log($"Clue '{associatedClue.clueName}' discovered by interacting with NPC.");
         }
-
-        // Reset dialogue activity status
-        isDialogueActive = false;
+        else
+        {
+            Debug.LogWarning("No associated clue found for this NPC.");
+        }
     }
 }

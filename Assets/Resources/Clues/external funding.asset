@@ -15,5 +15,5 @@ MonoBehaviour:
   clueName: external funding
   description: Clue discovered
   clueImage: {fileID: 0}
-  isDiscovered: 0
+  isDiscovered: 1
   PuzzleId: -1
