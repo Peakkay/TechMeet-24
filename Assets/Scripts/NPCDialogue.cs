@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections;
+
 public class NPCInteraction : MonoBehaviour, IInteractable
 {
     public string dialoguePath; // Path to Dialogue JSON file (e.g., "Dialogues/DialogueLiam")
@@ -24,13 +25,13 @@ public class NPCInteraction : MonoBehaviour, IInteractable
     private IEnumerator WaitForDialogueCompletion()
     {
         // Wait until the dialogue finishes
-        while (DialogueManager.Instance.dialogueOnDisplay)
+        while (DialogueManager.Instance.dialogue != null && DialogueManager.Instance.dialogueOnDisplay)
         {
             yield return null;
         }
 
         // Once dialogue is complete, discover the associated clue
-        if (associatedClue != null)
+        if (associatedClue != null && !associatedClue.isDiscovered)
         {
             ClueManager.Instance.DiscoverClue(associatedClue);
             Debug.Log($"Discovered clue from NPC: {associatedClue.clueName}");
