@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class RoomEnder : MonoBehaviour
+public class RoomEnder : MonoBehaviour, IInteractable
 {
     public Vector3 playerTargetPositionInScene2; // Target position for the player in Scene 2
     public string targetSceneName; // The name of the scene to load
