@@ -2,7 +2,7 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class RoomSwapper : MonoBehaviour,IInteractable
+public class RoomSwapper : MonoBehaviour, IInteractable
 {
     public GameObject mainGameObject; // The main game object to transfer between scenes
     public Vector3 playerTargetPositionInScene2; // Target position for the player in Scene 2
@@ -33,6 +33,8 @@ public class RoomSwapper : MonoBehaviour,IInteractable
 
     private IEnumerator WaitForInput()
     {
+        DialogueUXManager.instance.ShowBox();
+        DialogueUXManager.instance.UpdateDialogue("Choice", "Press 0 to cancel or 1 to swap rooms.", "#ffffff", null);
         Debug.Log("Press 0 to cancel or 1 to swap rooms.");
 
         bool responded = false;
@@ -41,11 +43,13 @@ public class RoomSwapper : MonoBehaviour,IInteractable
         {
             if (Input.GetKeyDown(KeyCode.Alpha0))
             {
+                DialogueUXManager.instance.HideBox();
                 Debug.Log("0 pressed: Interaction canceled.");
                 responded = true;
             }
             else if (Input.GetKeyDown(KeyCode.Alpha1))
             {
+                DialogueUXManager.instance.HideBox();
                 Debug.Log("1 pressed: Calling SwapRoom.");
                 SwapRoom();
                 responded = true;

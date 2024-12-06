@@ -21,17 +21,21 @@ public class RoomEnder : MonoBehaviour, IInteractable
     {
         Debug.Log("Press 0 to cancel or 1 to swap rooms.");
 
+        DialogueUXManager.instance.ShowBox();
+        DialogueUXManager.instance.UpdateDialogue("Choice", "Press 0 to cancel or 1 to swap rooms.", "#ffffff", null);
         bool responded = false;
 
         while (!responded)
         {
             if (Input.GetKeyDown(KeyCode.Alpha0))
             {
+                DialogueUXManager.instance.HideBox();
                 Debug.Log("0 pressed: Interaction canceled.");
                 responded = true;
             }
             else if (Input.GetKeyDown(KeyCode.Alpha1))
             {
+                DialogueUXManager.instance.HideBox();
                 Debug.Log("1 pressed: Calling SwapRoom.");
                 SwapRoom();
                 responded = true;
@@ -43,9 +47,9 @@ public class RoomEnder : MonoBehaviour, IInteractable
 
     public void SwapRoom()
     {
-            // Mark the main game object to persist across scenes
-            // Load the target scene asynchronously
-            SceneManager.LoadSceneAsync(targetSceneName).completed += OnSceneLoaded;
+        // Mark the main game object to persist across scenes
+        // Load the target scene asynchronously
+        SceneManager.LoadSceneAsync(targetSceneName).completed += OnSceneLoaded;
     }
 
     private void OnSceneLoaded(AsyncOperation asyncOperation)
