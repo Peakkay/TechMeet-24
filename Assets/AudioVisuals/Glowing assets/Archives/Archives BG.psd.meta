@@ -34,7 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -72,7 +72,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -93,9 +93,358 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Archives BG_0
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 340
+        width: 136
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3235c2a1b39a1845b49797330b030bc
+      internalID: -707338491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archives BG_1
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 338
+        width: 140
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48a9c4d381c76814bbce917fd4d231f6
+      internalID: -424837226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archives BG_2
+      rect:
+        serializedVersion: 2
+        x: 374
+        y: 338
+        width: 140
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f8c8e5ff620db74888f455b1f29977d
+      internalID: 1963938414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archives BG_3
+      rect:
+        serializedVersion: 2
+        x: 548
+        y: 338
+        width: 140
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74c6b823cc2281a4e9681a51ac77eede
+      internalID: -1420286661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archives BG_4
+      rect:
+        serializedVersion: 2
+        x: 717
+        y: 338
+        width: 140
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be6a7405a44e3994ebcabbd4e1a05637
+      internalID: -1054459187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archives BG_5
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 226
+        width: 156
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf5b63d87308d214485127e50318c618
+      internalID: 643121612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archives BG_6
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 223
+        width: 161
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27db47b0ce5bf5a48915fb139fe4a65e
+      internalID: 1183936263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archives BG_7
+      rect:
+        serializedVersion: 2
+        x: 373
+        y: 223
+        width: 162
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c49ee7f70385d3468a1a4fbe03ab943
+      internalID: 1378498982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archives BG_8
+      rect:
+        serializedVersion: 2
+        x: 547
+        y: 223
+        width: 162
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e90fb5197f577dc42b3eea9443b583a2
+      internalID: -237494665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archives BG_9
+      rect:
+        serializedVersion: 2
+        x: 716
+        y: 223
+        width: 162
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f142eed6dabaf242acb586f5ef91ff1
+      internalID: -1948469561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archives BG_10
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 146
+        width: 88
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f07840df1d48a3343a3ffd75559ec5f2
+      internalID: -441989152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archives BG_11
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 120
+        width: 91
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abaa9d56b9bd85a49a4a579cb430aff8
+      internalID: -1920365689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archives BG_12
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 119
+        width: 91
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c66794d3c0a4608499bce2f8c8efc7fe
+      internalID: 466837529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archives BG_13
+      rect:
+        serializedVersion: 2
+        x: 583
+        y: 123
+        width: 91
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34651e154f906474ea1cb5f2e4774b40
+      internalID: 548003787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archives BG_14
+      rect:
+        serializedVersion: 2
+        x: 752
+        y: 122
+        width: 91
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3aea10b8f5de2d44ab9b0a97b2f4ede8
+      internalID: -631688911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archives BG_15
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 121
+        width: 74
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae7fef61b790f3b47b1cfeb925661390
+      internalID: -584685288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -106,7 +455,23 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Archives BG_0: -707338491
+      Archives BG_1: -424837226
+      Archives BG_10: -441989152
+      Archives BG_11: -1920365689
+      Archives BG_12: 466837529
+      Archives BG_13: 548003787
+      Archives BG_14: -631688911
+      Archives BG_15: -584685288
+      Archives BG_2: 1963938414
+      Archives BG_3: -1420286661
+      Archives BG_4: -1054459187
+      Archives BG_5: 643121612
+      Archives BG_6: 1183936263
+      Archives BG_7: 1378498982
+      Archives BG_8: -237494665
+      Archives BG_9: -1948469561
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
