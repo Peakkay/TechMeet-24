@@ -90,6 +90,7 @@ public class FinalVerdictManager : MonoBehaviour
         }
 
         Debug.Log($"Final verdict confirmed: Suspect {selectedSuspectIndex + 1}");
+        EndingManager.Instance.ChooseEnding(selectedSuspectIndex);
     }
 
 

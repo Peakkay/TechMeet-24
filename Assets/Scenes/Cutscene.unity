@@ -380,6 +380,64 @@ MonoBehaviour:
     y: 0
     width: 1
     height: 1
+--- !u!1 &762771998
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 762772000}
+  - component: {fileID: 762771999}
+  m_Layer: 0
+  m_Name: EndingManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &762771999
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 762771998}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 760c96dea8b800d4882ae6f98c7d5324, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clips:
+  - {fileID: 32900000, guid: eeb43e7d4b92a0e42af11ede5b7761d1, type: 3}
+  - {fileID: 32900000, guid: 34ed1d434f72c274ea92c9c94d4c26b4, type: 3}
+  - {fileID: 32900000, guid: dac88fa5774eef042b2efbcf29e745d2, type: 3}
+  - {fileID: 32900000, guid: 68d6fda374cb5be4ca8147bbebe1e02e, type: 3}
+  canvas: {fileID: 1287531048}
+  videoPlayer: {fileID: 1143192838}
+  winlose:
+  - {fileID: 32900000, guid: 01bb5194c1c11eb4b95e4b42934af48b, type: 3}
+  - {fileID: 32900000, guid: 1391e71ff5e8a684e9db5d018279eb30, type: 3}
+  finalResult:
+  - {fileID: 32900000, guid: cdc2d353fac9393489763776c9d0b9f1, type: 3}
+  - {fileID: 32900000, guid: d59cc01ee091e734c9641c03b569ed75, type: 3}
+  wlindex: 0
+--- !u!4 &762772000
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 762771998}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.34717953, y: -0.15288532, z: -0.025406966}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1143192837
 GameObject:
   m_ObjectHideFlags: 0
@@ -584,3 +642,4 @@ SceneRoots:
   - {fileID: 1287531052}
   - {fileID: 1143192839}
   - {fileID: 356870506}
+  - {fileID: 762772000}
