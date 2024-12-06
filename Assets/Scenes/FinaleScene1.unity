@@ -53501,6 +53501,10 @@ PrefabInstance:
       propertyPath: dialoguePath
       value: Dialogues/MayaRoom1
       objectReference: {fileID: 0}
+    - target: {fileID: 784081462408037019, guid: dcb4601700dba0341bf4060b2e60ed8c, type: 3}
+      propertyPath: associatedClue
+      value: 
+      objectReference: {fileID: 11400000, guid: 84062ceba3a2a824db786fa4305a57ce, type: 2}
     - target: {fileID: 2228838010466483958, guid: dcb4601700dba0341bf4060b2e60ed8c, type: 3}
       propertyPath: m_Name
       value: Maya
