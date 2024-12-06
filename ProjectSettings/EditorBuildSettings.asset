@@ -6,6 +6,21 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: 8c9cfa26abfee488c85f1582747f6a02
+    path: Assets/Scenes/FinaleScene1.unity
+    guid: 6d8e07b31a98a1641a88c1ec0c5cd318
+  - enabled: 1
+    path: Assets/ClueNetwork/ClueUI.unity
+    guid: aabe87eccdcc3974c8e0387cf4f33742
+  - enabled: 1
+    path: Assets/Scenes/FinaleScene2.unity
+    guid: f25a5496d9ed3d244bb9572a51154404
+  - enabled: 1
+    path: Assets/Scenes/FinaleScene3.unity
+    guid: 5fb38cedc0629d04fa2c992547a106f3
+  - enabled: 1
+    path: Assets/Scenes/FinaleScene4.unity
+    guid: abd7e972adddbdd4ab05e5d7f794a3e0
+  - enabled: 1
+    path: Assets/Scenes/FinaleConclusion.unity
+    guid: 0142811d6acc63447ab9debbd7f3739e
   m_configObjects: {}

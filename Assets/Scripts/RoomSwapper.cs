@@ -1,6 +1,7 @@
 using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.Video;
 
 public class RoomSwapper : MonoBehaviour, IInteractable
 {
@@ -8,6 +9,7 @@ public class RoomSwapper : MonoBehaviour, IInteractable
     public Vector3 playerTargetPositionInScene2; // Target position for the player in Scene 2
     public string targetSceneName; // The name of the scene to load
     private GameObject player;
+    public VideoClip Clip;
 
     private void Start()
     {
@@ -65,29 +67,11 @@ public class RoomSwapper : MonoBehaviour, IInteractable
         {
             // Mark the main game object to persist across scenes
             DontDestroyOnLoad(mainGameObject);
-
-            // Load the target scene asynchronously
-            SceneManager.LoadSceneAsync(targetSceneName).completed += OnSceneLoaded;
+            CutsceneManager.Instance.targetSceneName = targetSceneName;
+            CutsceneManager.Instance.playerTargetPositionInScene2 =playerTargetPositionInScene2;
+            CutsceneManager.Instance.videoPlayer.clip = Clip;
+            CutsceneManager.Instance.PlayCutscene();
         }
     }
 
-    private void OnSceneLoaded(AsyncOperation asyncOperation)
-    {
-        // Find the player again in the new scene (if needed)
-        player = GameObject.FindGameObjectWithTag("Player");
-
-        if (player != null)
-        {
-            // Move the player to the target position in the new scene
-            player.transform.position = playerTargetPositionInScene2;
-            player.GetComponent<PlayerMovement>().targetPosition = playerTargetPositionInScene2;
-        }
-        else
-        {
-            Debug.LogError("Player not found in the target scene!");
-        }
-
-        // Optionally, reposition the main game object if necessary
-        // mainGameObject.transform.position = someTargetPosition;
-    }
 }
