@@ -24033,7 +24033,7 @@ MonoBehaviour:
   mainGameObject: {fileID: 0}
   playerTargetPositionInScene2: {x: 0, y: 0, z: 0}
   targetSceneName: FinaleScene3
-  Clip: {fileID: 32900000, guid: cdc2d353fac9393489763776c9d0b9f1, type: 3}
+  Clip: {fileID: 32900000, guid: 55247cba6d3bafb43a9f0edd723e31ff, type: 3}
 --- !u!61 &808182817
 BoxCollider2D:
   m_ObjectHideFlags: 0

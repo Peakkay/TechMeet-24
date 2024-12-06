@@ -17,5 +17,5 @@ MonoBehaviour:
     with the project. If this gets out, it will ruin everything we\u2019ve worked
     for. Make sure the data stays hidden. Do whatever it takes."
   clueImage: {fileID: 0}
-  isDiscovered: 1
+  isDiscovered: 0
   PuzzleId: -1
