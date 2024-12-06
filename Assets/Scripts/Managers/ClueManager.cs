@@ -4,27 +4,40 @@ using UnityEngine;
 
 public class ClueManager : Singleton<ClueManager>
 {
-    public List<Clue> allClues; // List of all clues in the game.
-    public List<Clue> discoveredClues = new List<Clue>(); // Clues the player has found.
-    public KeyCode jumpLineKey = KeyCode.Space; // Key to close the dialogue box.
+    public List<Clue> allClues; // List of all clues in the game
+    public List<Clue> discoveredClues = new List<Clue>(); // Clues the player has found
+    public KeyCode jumpLineKey = KeyCode.Space; // Key to close the dialogue box
     public event Action<Clue> OnClueDiscovered;
-    private bool isDialogueBoxOpen = false; // Tracks if the dialogue box is currently open.
+    private bool isDialogueBoxOpen = false; // Tracks if the dialogue box is currently open
 
     public void DiscoverClue(Clue clue)
     {
+        // Ensure the clue has not already been discovered
         if (!discoveredClues.Contains(clue))
         {
             clue.isDiscovered = true;
             discoveredClues.Add(clue);
             Debug.Log($"Discovered Clue: {clue.clueName}");
 
-            // Show the dialogue box
+            // Show the dialogue box for the clue
             DialogueUXManager.instance.ShowBox();
-            DialogueUXManager.instance.UpdateDialogue(clue.clueName, clue.description, "#ffffff", clue.clueImage);
-            OnClueDiscovered?.Invoke(clue);
-            // Mark dialogue box as open
+            DialogueUXManager.instance.UpdateDialogue(
+                clue.clueName,
+                clue.description,
+                "#ffffff", // Clue text color
+                clue.clueImage
+            );
+
+            // Mark the dialogue box as open
             isDialogueBoxOpen = true;
 
+            // Trigger the event for clue discovery
+            OnClueDiscovered?.Invoke(clue);
+
+            // Update graph or any relevant systems
+            GraphManager.Instance.UpdateAllNodes();
+
+            // If the clue is tied to a puzzle, notify the PuzzleManager
             if (clue.PuzzleId != -1)
             {
                 PuzzleManager.Instance.CheckPuzzleCompletion(clue.PuzzleId);

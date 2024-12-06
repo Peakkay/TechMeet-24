@@ -16,5 +16,5 @@ MonoBehaviour:
   description: (123 )Analysis of the circuit reveals intentional tampering. The overload
     was not caused by an accident but was designed to destabilize the lab systems.
   clueImage: {fileID: 0}
-  isDiscovered: 1
+  isDiscovered: 0
   PuzzleId: -1

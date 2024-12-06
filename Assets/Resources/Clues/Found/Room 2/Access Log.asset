@@ -17,5 +17,5 @@ MonoBehaviour:
     Jake Harrison\u2019s credentials, even though he was expelled from the project
     weeks ago."
   clueImage: {fileID: 0}
-  isDiscovered: 1
+  isDiscovered: 0
   PuzzleId: -1

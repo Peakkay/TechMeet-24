@@ -34,26 +34,16 @@ public class GraphManager : Singleton<GraphManager>
             GraphCreator.Instance.GetGraph("Maya")
         };
 
-        ShowPage(0); // Show the first suspect graph
-
-        // Subscribe to clue discovery
-        if (ClueManager.Instance != null)
+         foreach (var graph in suspectGraphs)
         {
-            ClueManager.Instance.OnClueDiscovered += DiscoverClue; // Subscribe to the event
+            InitializeGraph(graph);
         }
+
+        ShowPage(0); // Show the first suspect graph
 
         // Add button listeners for navigation
         leftArrowButton.onClick.AddListener(() => ShowPage(currentPageIndex - 1));
         rightArrowButton.onClick.AddListener(() => ShowPage(currentPageIndex + 1));
-    }
-
-    void OnDestroy()
-    {
-        // Unsubscribe from clue discovery
-        if (ClueManager.Instance != null)
-        {
-            ClueManager.Instance.OnClueDiscovered -= DiscoverClue;
-        }
     }
 
     /// <summary>
@@ -61,6 +51,7 @@ public class GraphManager : Singleton<GraphManager>
     /// </summary>
     private void ShowPage(int pageIndex)
     {
+        Debug.Log($"{pageIndex} called");
         if (pageIndex < 0 || pageIndex >= graphPages.Count) return;
 
         // Hide all pages
@@ -73,77 +64,109 @@ public class GraphManager : Singleton<GraphManager>
         currentPageIndex = pageIndex;
         graphPages[pageIndex].gameObject.SetActive(true);
 
-        // Update the page label to show the current suspect's name
-        pageLabel.text = $"Suspect: {suspectGraphs[pageIndex].nodes[0].name}"; // Display name of the first node (suspect)
+        switch(pageIndex){
+            case 0:
+                pageLabel.text = "Suspect: Sophia";
+                break;
+            case 1:
+                pageLabel.text = "Suspect: Adrian";
+                break;
+            case 2:
+                pageLabel.text = "Suspect: Liam";
+                break;
+            case 3:
+                pageLabel.text = "Suspect: Maya";
+                break;
+        }
     }
 
-    /// <summary>
-    /// Called when a clue is discovered. Updates the relevant graph.
-    /// </summary>
-    public void DiscoverClue(Clue clue)
+    private string GetUniqueKey(int graphIndex, string nodeName)
     {
-        // Check all suspect graphs to find the matching clue
-        foreach (var graph in suspectGraphs)
+        return $"{graphIndex}_{nodeName}";
+    }
+    private void InitializeGraph(GraphData graph)
+    {
+        int graphIndex = suspectGraphs.IndexOf(graph);
+
+        // Define grid parameters
+        float startX = -400f; // Starting X position
+        float startY = 200f;  // Starting Y position
+        float spacingX = 200f; // Horizontal spacing
+        float spacingY = 150f; // Vertical spacing
+        int columns = 3;       // Number of columns in the grid
+
+        for (int i = 0; i < graph.nodes.Count; i++)
         {
-            Node discoveredNode = graph.nodes.Find(node => node.name == clue.clueName);
-            if (discoveredNode != null)
+            var node = graph.nodes[i];
+            string uniqueKey = GetUniqueKey(graphIndex, node.name);
+
+            if (!nodeObjects.ContainsKey(uniqueKey))
             {
-                discoveredNode.status = true;
+                // Instantiate the node prefab for each node
+                GameObject newNode = Instantiate(nodePrefab, graphPages[graphIndex]);
+                newNode.name = node.name;
 
-                // If this graph page is visible, update the graph
-                if (graphPages[suspectGraphs.IndexOf(graph)].gameObject.activeSelf)
-                {
-                    UpdateGraph(graph, suspectGraphs.IndexOf(graph));
-                }
+                // Set the node's text to its name
+                TextMeshProUGUI tmpText = newNode.GetComponentInChildren<TextMeshProUGUI>();
+                tmpText.text = node.name;
 
-                Debug.Log($"Clue discovered: {clue.clueName}");
-                return;
+                // Calculate grid-based position
+                int row = i / columns; // Determine the row based on the index
+                int col = i % columns; // Determine the column based on the index
+
+                float xPos = startX + (col * spacingX);
+                float yPos = startY - (row * spacingY);
+
+                // Set the node's position
+                RectTransform rectTransform = newNode.GetComponent<RectTransform>();
+                rectTransform.anchoredPosition = new Vector2(xPos, yPos);
+
+                // Store the created node with a unique key
+                nodeObjects[uniqueKey] = newNode;
+
+                // Set its initial active state based on its discovery status
+                newNode.SetActive(node.status);
+
+                Debug.Log($"Node created: {node.name} with key {uniqueKey} at position ({xPos}, {yPos}) for graph {graphIndex}");
             }
         }
     }
 
+
     /// <summary>
-    /// Updates the graph by showing the discovered clues.
+    /// Dynamically updates all nodes to reflect discovered clues.
     /// </summary>
-    private void UpdateGraph(GraphData graph, int pageIndex)
+public void UpdateAllNodes()
+{
+    foreach (var graph in suspectGraphs)
     {
+        int graphIndex = suspectGraphs.IndexOf(graph); // Identify the graph index
+
         foreach (var node in graph.nodes)
         {
-            if (nodeObjects.ContainsKey(node.name))
-            {
-                // Update node visibility based on its status (discovered or not)
-                nodeObjects[node.name].SetActive(node.status);
-            }
-        }
+            // Generate the unique key for the node
+            string uniqueKey = GetUniqueKey(graphIndex, node.name);
 
-        // Update edges if necessary (you can apply similar logic if edges should also be dynamically updated based on discovery)
-        foreach (var edge in graph.edges)
-        {
-            if (nodeObjects.ContainsKey(edge.from) && nodeObjects.ContainsKey(edge.to))
+            // Check if the node corresponds to a discovered clue
+            Clue matchingClue = ClueManager.Instance.discoveredClues.Find(clue => clue.clueName == node.name);
+            if (matchingClue != null)
             {
-                GameObject fromNode = nodeObjects[edge.from];
-                GameObject toNode = nodeObjects[edge.to];
+                node.status = true; // Update the node's status
 
-                // Get the LineRenderer component of the edge
-                string edgeName = $"Edge_{edge.from}_{edge.to}";
-                Transform edgeTransform = graphPages[pageIndex].Find(edgeName);
-                if (edgeTransform != null)
+                if (nodeObjects.ContainsKey(uniqueKey))
                 {
-                    LineRenderer lineRenderer = edgeTransform.GetComponent<LineRenderer>();
-
-                    // Update material based on the nodes' statuses
-                    if (fromNode.activeSelf && toNode.activeSelf)
-                    {
-                        lineRenderer.material = BoolTrueMaterial;
-                    }
-                    else
-                    {
-                        lineRenderer.material = BoolFalseMaterial;
-                    }
+                    // Activate the node using the unique key
+                    nodeObjects[uniqueKey].SetActive(true);
+                }
+                else
+                {
+                    Debug.LogWarning($"Node with key {uniqueKey} not found in nodeObjects.");
                 }
             }
         }
-
-        Debug.Log("Graph updated dynamically.");
     }
+
+    Debug.Log("All nodes updated based on discovered clues.");
+}
+
 }

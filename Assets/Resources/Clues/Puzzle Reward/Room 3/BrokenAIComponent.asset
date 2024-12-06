@@ -16,5 +16,5 @@ MonoBehaviour:
   description: "the component's circuits show evidence of being forcefully short-circuited.
     This is not accidental wear and tear\u2014it was intentionally disabled"
   clueImage: {fileID: 0}
-  isDiscovered: 1
+  isDiscovered: 0
   PuzzleId: -1

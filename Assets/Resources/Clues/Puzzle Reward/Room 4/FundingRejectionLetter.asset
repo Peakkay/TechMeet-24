@@ -18,5 +18,5 @@ MonoBehaviour:
     Board. Note-Adrian Meyer strikes again. He\u2019ll do anything to ensure this
     project fails. Who\u2019s funding him?"
   clueImage: {fileID: 0}
-  isDiscovered: 1
+  isDiscovered: 0
   PuzzleId: -1
