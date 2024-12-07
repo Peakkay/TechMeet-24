@@ -249,7 +249,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bgmSource: {fileID: 198600355}
-  defaultClip: {fileID: 0}
   finaleScene1Clip: {fileID: 8300000, guid: 7b43478bec0e3de4988993b21b2bba45, type: 3}
   finaleScene2Clip: {fileID: 8300000, guid: 9d04b3456a908dd4e82e6b43dac9ac18, type: 3}
   finaleScene3Clip: {fileID: 8300000, guid: 9d04b3456a908dd4e82e6b43dac9ac18, type: 3}

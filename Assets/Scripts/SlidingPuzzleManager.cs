@@ -9,6 +9,7 @@ public class SlidingPuzzleManager : MonoBehaviour
     public Vector2 tileSize = new Vector2(200, 200); // Size of each tile
     public RectTransform emptyTile; // The empty tile RectTransform
     private Vector2Int emptyTilePosition; // Position of the empty tile in grid
+    
 
     public SlidingTile[,] grid;
 
@@ -20,6 +21,7 @@ public class SlidingPuzzleManager : MonoBehaviour
     void Start()
     {
         InitializeGrid();
+      
     }
 
     private void InitializeGrid()
