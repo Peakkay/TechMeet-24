@@ -6,7 +6,7 @@ Welcome to our , a Unity 2D game built to deliver an engaging and fun experience
 
 ## About the Game
 
-Game_name is rpg game created in Unity. The game is about solving a murder mystery of Dr. Carrington where in the player goes through various rooms solving puzzles and finding clues related to the crime. The main objective being finding the culprit.
+Carrington Case is rpg game created in Unity. The game is about solving a murder mystery of Dr. Carrington where in the player goes through various rooms solving puzzles and finding clues related to the crime. The main objective being finding the culprit.
 
 ## Features
 
