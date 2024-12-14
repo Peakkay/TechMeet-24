@@ -93,6 +93,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -100,10 +113,10 @@ TextureImporter:
       name: Holes_0
       rect:
         serializedVersion: 2
-        x: 63
-        y: 664
-        width: 293
-        height: 370
+        x: 143
+        y: 785
+        width: 150
+        height: 150
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -121,10 +134,10 @@ TextureImporter:
       name: Holes_1
       rect:
         serializedVersion: 2
-        x: 369
-        y: 661
-        width: 226
-        height: 369
+        x: 388
+        y: 785
+        width: 150
+        height: 150
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -142,10 +155,10 @@ TextureImporter:
       name: Holes_2
       rect:
         serializedVersion: 2
-        x: 604
-        y: 660
-        width: 240
-        height: 364
+        x: 651
+        y: 785
+        width: 150
+        height: 150
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -163,10 +176,10 @@ TextureImporter:
       name: Holes_3
       rect:
         serializedVersion: 2
-        x: 853
-        y: 663
-        width: 246
-        height: 358
+        x: 906
+        y: 785
+        width: 150
+        height: 150
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -184,10 +197,10 @@ TextureImporter:
       name: Holes_4
       rect:
         serializedVersion: 2
-        x: 1121
-        y: 656
-        width: 222
-        height: 363
+        x: 1161
+        y: 785
+        width: 150
+        height: 150
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -205,10 +218,10 @@ TextureImporter:
       name: Holes_5
       rect:
         serializedVersion: 2
-        x: 1360
-        y: 650
-        width: 200
-        height: 370
+        x: 1379
+        y: 785
+        width: 150
+        height: 150
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -226,10 +239,10 @@ TextureImporter:
       name: Holes_6
       rect:
         serializedVersion: 2
-        x: 1587
-        y: 659
-        width: 250
-        height: 347
+        x: 1600
+        y: 785
+        width: 150
+        height: 150
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}

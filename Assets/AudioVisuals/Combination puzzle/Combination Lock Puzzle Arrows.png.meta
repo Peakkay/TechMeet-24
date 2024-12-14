@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -108,7 +108,889 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Combination Lock Puzzle Arrows_0
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 897
+        width: 44
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90c325e8a3226814b8b1247ed6cc57bd
+      internalID: 2146876805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Combination Lock Puzzle Arrows_1
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 927
+        width: 74
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9cc0fb68d4d88214da44568ba4ae58c6
+      internalID: -2024110469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Combination Lock Puzzle Arrows_2
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 939
+        width: 4
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 360dbd2df0114254496b8e245e73a792
+      internalID: -1548805207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Combination Lock Puzzle Arrows_3
+      rect:
+        serializedVersion: 2
+        x: 841
+        y: 885
+        width: 44
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bea93527f53ace74894be3c77697d456
+      internalID: -1354200145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Combination Lock Puzzle Arrows_4
+      rect:
+        serializedVersion: 2
+        x: 908
+        y: 915
+        width: 74
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c86098102b8196b48880da6cb8f844c1
+      internalID: -54839731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Combination Lock Puzzle Arrows_5
+      rect:
+        serializedVersion: 2
+        x: 1463
+        y: 897
+        width: 44
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b07ccdf12331480448ed689597a0da37
+      internalID: 1136764288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Combination Lock Puzzle Arrows_6
+      rect:
+        serializedVersion: 2
+        x: 1530
+        y: 927
+        width: 74
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82804b1ad5baeef449e4544a91dabefc
+      internalID: -677754856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Combination Lock Puzzle Arrows_7
+      rect:
+        serializedVersion: 2
+        x: 1670
+        y: 939
+        width: 4
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 377201701c58fe749b3a24e1755e30b7
+      internalID: 1558418988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Combination Lock Puzzle Arrows_8
+      rect:
+        serializedVersion: 2
+        x: 1048
+        y: 927
+        width: 4
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f799d7d05bba6346813584744ee55ca
+      internalID: -1593919854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Combination Lock Puzzle Arrows_9
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 913
+        width: 4
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e79c8999f53511e409bf95577d659b90
+      internalID: 216273190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Combination Lock Puzzle Arrows_10
+      rect:
+        serializedVersion: 2
+        x: 1670
+        y: 913
+        width: 4
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05df5192b86c20d4b80ea9eccb8be65f
+      internalID: -991749256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Combination Lock Puzzle Arrows_11
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 898
+        width: 5
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 658e6234a115f514a8321073a13cc68f
+      internalID: 532727036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Combination Lock Puzzle Arrows_12
+      rect:
+        serializedVersion: 2
+        x: 1048
+        y: 901
+        width: 4
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e3b4f670658d63448e1039f1306378e
+      internalID: -289225212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Combination Lock Puzzle Arrows_13
+      rect:
+        serializedVersion: 2
+        x: 1669
+        y: 898
+        width: 5
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7117346b94408e94286cee4181904b9e
+      internalID: 799059328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Combination Lock Puzzle Arrows_14
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 897
+        width: 24
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecc18398a9d9c1f48bb97d11f9b9811a
+      internalID: 1690026731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Combination Lock Puzzle Arrows_15
+      rect:
+        serializedVersion: 2
+        x: 359
+        y: 897
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec7ffc9e09c6acb4497d7ed57693af08
+      internalID: 697738133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Combination Lock Puzzle Arrows_16
+      rect:
+        serializedVersion: 2
+        x: 1508
+        y: 897
+        width: 24
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f68f27b61bf84dc44bc0e08d99a461b3
+      internalID: -1712309281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Combination Lock Puzzle Arrows_17
+      rect:
+        serializedVersion: 2
+        x: 1638
+        y: 897
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0839a528678a0946941d5f666a75c61
+      internalID: 334563503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Combination Lock Puzzle Arrows_18
+      rect:
+        serializedVersion: 2
+        x: 886
+        y: 885
+        width: 24
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d78b61a284db5d41b437489d07632af
+      internalID: 842313662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Combination Lock Puzzle Arrows_19
+      rect:
+        serializedVersion: 2
+        x: 1016
+        y: 885
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 285cf95329d25ba40b49a6b81783280f
+      internalID: 1885420937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Combination Lock Puzzle Arrows_20
+      rect:
+        serializedVersion: 2
+        x: 1047
+        y: 886
+        width: 5
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 527f1a98fe6acab4cbf3599839c40b21
+      internalID: 1691740049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Combination Lock Puzzle Arrows_21
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 175
+        width: 5
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c95757c5def47f947a1ceb9a26ac0645
+      internalID: 1247844928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Combination Lock Puzzle Arrows_22
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 183
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f14c96e058f1c264191f17b7883cf215
+      internalID: 105346763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Combination Lock Puzzle Arrows_23
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 183
+        width: 24
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f0ddfa1106f116488ecdb0ac03d59fa
+      internalID: -1458405735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Combination Lock Puzzle Arrows_24
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 127
+        width: 44
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3746b36beec114e4caf1b3f2839b2c4c
+      internalID: -1900221171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Combination Lock Puzzle Arrows_25
+      rect:
+        serializedVersion: 2
+        x: 841
+        y: 175
+        width: 5
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1eb9621a80d598347af35942709d921a
+      internalID: -70452023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Combination Lock Puzzle Arrows_26
+      rect:
+        serializedVersion: 2
+        x: 873
+        y: 183
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15dd6c8206c5f01429ddb35b14a51aa8
+      internalID: -1497112690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Combination Lock Puzzle Arrows_27
+      rect:
+        serializedVersion: 2
+        x: 983
+        y: 183
+        width: 24
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d78416b9dc1bd440a741e6f958c9a8c
+      internalID: -62115077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Combination Lock Puzzle Arrows_28
+      rect:
+        serializedVersion: 2
+        x: 1008
+        y: 127
+        width: 44
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: daabea503fb86d244b34374f0ae96d47
+      internalID: -1831615570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Combination Lock Puzzle Arrows_29
+      rect:
+        serializedVersion: 2
+        x: 1463
+        y: 175
+        width: 5
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 048beb80737388646a3b7faa734f9b36
+      internalID: -1177881346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Combination Lock Puzzle Arrows_30
+      rect:
+        serializedVersion: 2
+        x: 1495
+        y: 183
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ca40ddb4824cb145bce21863234abd5
+      internalID: 371989069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Combination Lock Puzzle Arrows_31
+      rect:
+        serializedVersion: 2
+        x: 1605
+        y: 183
+        width: 24
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e6116e43f392db4e838495d0835eddc
+      internalID: -130450720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Combination Lock Puzzle Arrows_32
+      rect:
+        serializedVersion: 2
+        x: 1630
+        y: 127
+        width: 44
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7894208cc5deea94c9ad905a6cc943f3
+      internalID: 1708435933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Combination Lock Puzzle Arrows_33
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 159
+        width: 4
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc6a291956426734eb962de81e86e0a1
+      internalID: -1074232101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Combination Lock Puzzle Arrows_34
+      rect:
+        serializedVersion: 2
+        x: 841
+        y: 159
+        width: 4
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09d65dc6f28dc5d4baad7bae4370e318
+      internalID: -937846452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Combination Lock Puzzle Arrows_35
+      rect:
+        serializedVersion: 2
+        x: 1463
+        y: 159
+        width: 4
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a6d69a6e09e76844a19e24ba7eb6c61
+      internalID: 14719941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Combination Lock Puzzle Arrows_36
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 133
+        width: 4
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c60cbad6072a2dd419165136d910bca0
+      internalID: -1375510604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Combination Lock Puzzle Arrows_37
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 79
+        width: 74
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa215608969d3b44a95aaae443c88852
+      internalID: -567201051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Combination Lock Puzzle Arrows_38
+      rect:
+        serializedVersion: 2
+        x: 841
+        y: 133
+        width: 4
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b25a9bab0efc4942a548f5158c7b046
+      internalID: -594369751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Combination Lock Puzzle Arrows_39
+      rect:
+        serializedVersion: 2
+        x: 911
+        y: 79
+        width: 74
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c3df821ab956d64e83060efc06ae2df
+      internalID: 1514472600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Combination Lock Puzzle Arrows_40
+      rect:
+        serializedVersion: 2
+        x: 1463
+        y: 133
+        width: 4
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef13a62bc8b15bd4abd0d506dddf8f12
+      internalID: 402776869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Combination Lock Puzzle Arrows_41
+      rect:
+        serializedVersion: 2
+        x: 1533
+        y: 79
+        width: 74
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0b2e49e0d753e0488bf139dd83ea741
+      internalID: -1019762231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -119,7 +1001,49 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Combination Lock Puzzle Arrows_0: 2146876805
+      Combination Lock Puzzle Arrows_1: -2024110469
+      Combination Lock Puzzle Arrows_10: -991749256
+      Combination Lock Puzzle Arrows_11: 532727036
+      Combination Lock Puzzle Arrows_12: -289225212
+      Combination Lock Puzzle Arrows_13: 799059328
+      Combination Lock Puzzle Arrows_14: 1690026731
+      Combination Lock Puzzle Arrows_15: 697738133
+      Combination Lock Puzzle Arrows_16: -1712309281
+      Combination Lock Puzzle Arrows_17: 334563503
+      Combination Lock Puzzle Arrows_18: 842313662
+      Combination Lock Puzzle Arrows_19: 1885420937
+      Combination Lock Puzzle Arrows_2: -1548805207
+      Combination Lock Puzzle Arrows_20: 1691740049
+      Combination Lock Puzzle Arrows_21: 1247844928
+      Combination Lock Puzzle Arrows_22: 105346763
+      Combination Lock Puzzle Arrows_23: -1458405735
+      Combination Lock Puzzle Arrows_24: -1900221171
+      Combination Lock Puzzle Arrows_25: -70452023
+      Combination Lock Puzzle Arrows_26: -1497112690
+      Combination Lock Puzzle Arrows_27: -62115077
+      Combination Lock Puzzle Arrows_28: -1831615570
+      Combination Lock Puzzle Arrows_29: -1177881346
+      Combination Lock Puzzle Arrows_3: -1354200145
+      Combination Lock Puzzle Arrows_30: 371989069
+      Combination Lock Puzzle Arrows_31: -130450720
+      Combination Lock Puzzle Arrows_32: 1708435933
+      Combination Lock Puzzle Arrows_33: -1074232101
+      Combination Lock Puzzle Arrows_34: -937846452
+      Combination Lock Puzzle Arrows_35: 14719941
+      Combination Lock Puzzle Arrows_36: -1375510604
+      Combination Lock Puzzle Arrows_37: -567201051
+      Combination Lock Puzzle Arrows_38: -594369751
+      Combination Lock Puzzle Arrows_39: 1514472600
+      Combination Lock Puzzle Arrows_4: -54839731
+      Combination Lock Puzzle Arrows_40: 402776869
+      Combination Lock Puzzle Arrows_41: -1019762231
+      Combination Lock Puzzle Arrows_5: 1136764288
+      Combination Lock Puzzle Arrows_6: -677754856
+      Combination Lock Puzzle Arrows_7: 1558418988
+      Combination Lock Puzzle Arrows_8: -1593919854
+      Combination Lock Puzzle Arrows_9: 216273190
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -106,6 +106,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -118,7 +131,7 @@ TextureImporter:
         width: 124
         height: 119
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -139,7 +152,7 @@ TextureImporter:
         width: 124
         height: 119
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -147,27 +160,6 @@ TextureImporter:
       bones: []
       spriteID: ce75f09f7d33abb41b8cd572d15ca257
       internalID: 1409455771
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: room1_2
-      rect:
-        serializedVersion: 2
-        x: 372
-        y: 561
-        width: 6
-        height: 51
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9c4caefdbc3cd0d4f94c02d95fe67795
-      internalID: 176516048
       vertices: []
       indices: 
       edges: []
@@ -181,56 +173,14 @@ TextureImporter:
         width: 144
         height: 143
       alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 20, y: 25, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
       spriteID: 2249f01695d0d9243a81869f2302d1f4
       internalID: 717804390
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: room1_4
-      rect:
-        serializedVersion: 2
-        x: 441
-        y: 567
-        width: 5
-        height: 36
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c4c1abcc4737b124884d5ffd745b504e
-      internalID: 462538567
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: room1_5
-      rect:
-        serializedVersion: 2
-        x: 573
-        y: 561
-        width: 6
-        height: 51
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1f27df45f293c44469afb15bb776be08
-      internalID: 1066119095
       vertices: []
       indices: 
       edges: []
@@ -244,7 +194,7 @@ TextureImporter:
         width: 124
         height: 119
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -252,48 +202,6 @@ TextureImporter:
       bones: []
       spriteID: 1fb95fccae69a784d82b4cc34c3bb8fa
       internalID: -48595990
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: room1_7
-      rect:
-        serializedVersion: 2
-        x: 642
-        y: 567
-        width: 5
-        height: 36
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3e60305c7e4e8644db98e2a51f06d30c
-      internalID: 694991432
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: room1_8
-      rect:
-        serializedVersion: 2
-        x: 770
-        y: 561
-        width: 6
-        height: 51
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 527e0c648f9775841bf97dde2de695ef
-      internalID: 575635894
       vertices: []
       indices: 
       edges: []
@@ -307,7 +215,7 @@ TextureImporter:
         width: 124
         height: 119
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -315,132 +223,6 @@ TextureImporter:
       bones: []
       spriteID: 23c5ffeb15d40ec4ba05d84b5c8fcc6b
       internalID: 904409953
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: room1_10
-      rect:
-        serializedVersion: 2
-        x: 839
-        y: 567
-        width: 5
-        height: 36
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ab6dd87ec9f699a4e91bd77983585452
-      internalID: -1147748144
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: room1_11
-      rect:
-        serializedVersion: 2
-        x: 953
-        y: 561
-        width: 6
-        height: 51
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e6decfc94dad9e141830d4f4c677d6ce
-      internalID: 2068110579
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: room1_12
-      rect:
-        serializedVersion: 2
-        x: 212
-        y: 456
-        width: 24
-        height: 57
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 261c2f54b5c1c784db04e9b380d82bbc
-      internalID: 2143205592
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: room1_13
-      rect:
-        serializedVersion: 2
-        x: 432
-        y: 492
-        width: 5
-        height: 21
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 87556f5637ffbff47a44289273afee4d
-      internalID: 1504944799
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: room1_14
-      rect:
-        serializedVersion: 2
-        x: 610
-        y: 456
-        width: 24
-        height: 57
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a4deadb2a6805964783513965b8de1b3
-      internalID: -189782026
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: room1_15
-      rect:
-        serializedVersion: 2
-        x: 793
-        y: 456
-        width: 24
-        height: 57
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5e9c12b0c9e3e1e4bb1183310fbf92b9
-      internalID: 1286205130
       vertices: []
       indices: 
       edges: []
@@ -454,7 +236,7 @@ TextureImporter:
         width: 142
         height: 85
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -462,27 +244,6 @@ TextureImporter:
       bones: []
       spriteID: 2c8df54783663a84da625f14db2e7f90
       internalID: -375934506
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: room1_17
-      rect:
-        serializedVersion: 2
-        x: 216
-        y: 372
-        width: 4
-        height: 4
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d7cefac26d3f44641a9c47675c423196
-      internalID: -150702401
       vertices: []
       indices: 
       edges: []
@@ -496,7 +257,7 @@ TextureImporter:
         width: 144
         height: 88
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -517,8 +278,8 @@ TextureImporter:
         width: 162
         height: 88
       alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 18, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -530,85 +291,22 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: room1_20
-      rect:
-        serializedVersion: 2
-        x: 417
-        y: 372
-        width: 4
-        height: 4
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a1767eae525344c4eb1cad72461b3fc8
-      internalID: 1889307733
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: room1_21
-      rect:
-        serializedVersion: 2
-        x: 614
-        y: 372
-        width: 4
-        height: 4
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2533acd32eba0654dac8f25e78d8035f
-      internalID: 911161542
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: room1_22
       rect:
         serializedVersion: 2
-        x: 615
+        x: 614
         y: 368
         width: 158
         height: 88
       alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 15, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
       spriteID: 3d81bafb513f79940a02ec33d96dbc40
       internalID: 256708303
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: room1_23
-      rect:
-        serializedVersion: 2
-        x: 797
-        y: 372
-        width: 4
-        height: 4
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2ba0f4757d184db448930deef1cecbf8
-      internalID: -1910777210
       vertices: []
       indices: 
       edges: []
@@ -622,7 +320,7 @@ TextureImporter:
         width: 144
         height: 88
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -643,7 +341,7 @@ TextureImporter:
         width: 90
         height: 144
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -664,7 +362,7 @@ TextureImporter:
         width: 90
         height: 144
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -685,7 +383,7 @@ TextureImporter:
         width: 90
         height: 144
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -706,7 +404,7 @@ TextureImporter:
         width: 90
         height: 144
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -727,7 +425,7 @@ TextureImporter:
         width: 90
         height: 144
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -774,6 +472,7 @@ TextureImporter:
       room1_28: -877730308
       room1_29: -1501088618
       room1_3: 717804390
+      room1_30: 1404654824
       room1_4: 462538567
       room1_5: 1066119095
       room1_6: -48595990

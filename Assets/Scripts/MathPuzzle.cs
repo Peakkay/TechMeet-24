@@ -1,6 +1,7 @@
 using UnityEngine;
 using TMPro;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 
 public class MathPuzzle : MonoBehaviour
 {
@@ -9,7 +10,7 @@ public class MathPuzzle : MonoBehaviour
     public List<string> numberValues; // Strings representing the numbers, editable from the Inspector
     public TMP_InputField sumInput; // TMP_InputField for entering the sum
     public GameObject submitButton; // Button to submit the answer
-
+    public bool solved = false;
     private int correctSum;
 
     void Start()
@@ -42,6 +43,7 @@ public class MathPuzzle : MonoBehaviour
             gameObject.SetActive(false); // Deactivate the panel
             GameObject player = GameObject.FindGameObjectWithTag("Player");
             player.GetComponent<PlayerMovement>().canMove = true;
+            solved=true;
         }
         else
         {
