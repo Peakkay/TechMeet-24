@@ -107,7 +107,7 @@ Actually its written on the wall(9)
 Layer 2: Sequence Brute Force
 
 The lock requires a specific 4-digit sequence (1324).
-Use trial and error (brute force) or clues in the room to deduce the sequence.
+Use trial and error (brute force) or clues in the room to deduce the sequence.:)
 Enter the correct sequence to unlock the second layer.
 Layer 3: Retrieve the Key
 
